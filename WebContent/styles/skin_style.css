@@ -1,0 +1,373 @@
+/*
+# (c) 2006 DS Data Systems UK Ltd, All rights reserved.
+#
+# DS Data Systems and KonaKart and their respective logos, are 
+# trademarks of DS Data Systems UK Ltd. All rights reserved.
+#
+# The information in this document below this text is free software; you can redistribute 
+# it and/or modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+# 
+# This software is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+*/
+
+/* Import the tile style */
+@import 'skin5.css';
+
+ 
+#olegbutton1
+	{
+		border:1px;  
+		COLOR: #ffffff; 
+		BACKGROUND-COLOR: #0099F2;
+		font-size: 15pt;
+		padding: 3px;
+	}
+ 
+body {
+  background: #ffffff;
+  color: #000000;
+  margin: 0px;
+}
+
+.body-header { 
+   font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.body-header img {
+ float: right;
+}
+
+.body-header  .small  {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+  padding-left:20px;
+}
+
+.body-header  .taggroup  {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  font-weight: bold;
+  padding-left:0px;
+}
+
+.body-header  .tag  {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  font-weight: normal;
+  padding-left:0px;
+}
+
+.body-content-div { 
+  padding-top: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.body-content-tab { 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+table.productListing {
+  border: 1px;
+  border-style: solid;
+  border-color:rgb(221,221,221);
+  border-spacing: 1px;
+}
+
+.productListing-heading {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background: rgb(248,248,248);
+  color: #000000;
+  font-weight: bold;
+}
+
+td.productListing-data {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+tr.accountHistory-odd, tr.addressBook-odd, tr.alsoPurchased-odd, tr.payment-odd, tr.productListing-odd, tr.productReviews-odd, tr.upcomingProducts-odd, tr.shippingOptions-odd {
+  background: rgb(255,255,255);
+}
+
+tr.accountHistory-even, tr.addressBook-even, tr.alsoPurchased-even, tr.payment-even, tr.productListing-even, tr.productReviews-even, tr.upcomingProducts-even, tr.shippingOptions-even {
+  background: rgb(255,255,255);
+}
+
+td.smallText, span.smallText,p.smallText {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+td.smallTextRed, span.smallTextRed,p.smallTextRed {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #ff0000;
+}
+
+td.smallTextGreen, span.smallTextGreen,p.smallTextGreen {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #00c000;
+}
+
+a.pageResults {
+  color: #0000FF;
+}
+
+a.pageResults:hover {
+  color: #0000FF;
+  background: #FFFF33;
+}
+
+.stockWarning { 
+ font-family : Arial, Helvetica, sans-serif;; 
+ font-size : 11px; 
+ color: #cc0033; 
+}
+
+.msg-box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 8px;
+  padding-right: 16px;
+  background: #f8f8f9; 
+  border: 1px;
+  border-style: solid;
+  border-color: #bbc3d3;
+  height:100%;
+}
+
+.msg-box-no-pad {
+  background: #f8f8f9; 
+  border: 1px;
+  border-style: solid;
+  border-color: #bbc3d3;
+  height:100%;
+}
+
+.boxText { 
+	 font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+}
+
+.productsNotifications { 
+	background: #f2fff7; 
+}
+
+.orderEdit { 
+	font-family : Arial, Helvetica, sans-serif; 
+	font-size : 11px; 
+	color: #70d250; 
+	text-decoration: underline; 
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+   color: rgb(41,137,186);
+  text-decoration: none;
+}
+
+form {
+	display: inline;
+}
+
+
+td.fieldKey {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+td.fieldValue {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+checkbox, input, radio, select {
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+textarea {
+  width: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+span.markProductOutOfStock {
+  font-family: Tahoma, Arial, Helvetica, sans-serif; 
+  font-size: 12px;
+  color: #c76170;
+  font-weight: bold;
+}
+
+span.productSpecialPrice {
+   font-family: Arial, Helvetica, sans-serif;
+  color: #ff0000;
+}
+
+.moduleRow { }
+.moduleRowOver { 
+	background-color: #D7E9F7; 
+	cursor: pointer; 
+}
+
+.checkoutBarFrom, .checkoutBarTo { 
+	 font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #8c8c8c;
+}
+
+.checkoutBarCurrent { 
+	 font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #000000; 
+}
+
+.messageStackError, .messageStackWarning { 
+	 font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	background-color: #ffb3b5; 
+}
+
+.messageStackSuccess { 
+	 font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	background-color: #99ff00; 
+}
+
+.inputRequirement { 
+	 font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	color: #ff0000; 
+}
+
+.list-detail-header { 
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* jQuery form validation */
+label { display: inline-block; width: 8em; }
+label.error { color: red; margin-left: 0.5em; width: 20em; }
+
+/* ---------------------- KonaKart GWT styles-------------------------*/
+
+.konakart-HandCursor {
+  cursor: pointer;
+}
+
+.konakart-PointerCursor {
+ cursor: default;
+}
+
+.konakart-TextBox {
+	background-color: white;
+}
+
+.konakart-TextBox-Invalid {
+	background-color: #ffb3b5;
+}
+
+.konakart-smallFont {
+  font-size: 60%;
+}
+
+.gwt-DialogBox {
+	border: 2px solid #AAAAAA;
+	background-color: white;
+}
+
+.gwt-DialogBox .Caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+	color: #9a9a9a;	padding: 4px;
+	padding-bottom: 8px;
+	cursor: default;
+}
+
+.suggested-search-input { 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  background-color: white;
+  text-align : center;
+}
+
+.suggested-search-items { 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  background-color: white; 
+}
+
+/* ---------------------- Image Gallery-------------------------*/
+
+#gallery img {
+	border: none;
+}
+
+#gallery_nav {
+	float: left;
+	width: 150px;
+	text-align: center;
+}
+
+#gallery_output {
+	float: left;
+	width: 400px;
+	height: 340px;
+	overflow: hidden;
+}
+
+#gallery_output img {
+	display: block;
+	margin: 4px auto 0 auto;
+}
+
+/*
+#imgcontent {
+	width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	background: #FFF;	
+	border: 1px solid #CCC;
+}
+*/
+
+p {
+	margin: 0;	
+	padding: 7px 0;
+}
+
+.clear {
+	clear: both;
+	line-height: 1px;
+	font-size: 1px;
+}
+

@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE form-validation PUBLIC "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.1.3//EN"
+          "http://jakarta.apache.org/commons/dtds/validator_1_1_3.dtd">
+<!--
+     KonaKart Struts validation file.
+	(c) 2006 DS Data Systems UK Ltd, All rights reserved.
+-->
+<form-validation>
+	<global>
+		<validator name="confirmPassword" classname="com.konakart.validators.StrutsValidator" method="validateTwoFields" methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionMessages,
+                       javax.servlet.http.HttpServletRequest" msg="register.customer.body.passwords.no.match"/>
+		<validator name="charsNotAllowed" classname="com.konakart.validators.StrutsValidator" method="charsNotAllowed" methodParams="java.lang.Object,
+                       org.apache.commons.validator.ValidatorAction,
+                       org.apache.commons.validator.Field,
+                       org.apache.struts.action.ActionMessages,
+                       javax.servlet.http.HttpServletRequest" msg="errors.charsNotAllowed"/>
+		<!-- =================================== -->
+		<!-- The following Constants can be customized -->
+		<!-- =================================== -->
+		<constant>
+			<constant-name>DATE_PATTERN</constant-name>
+			<constant-value>dd/MM/yyyy</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_FIRST_NAME_MIN_LENGTH</constant-name>
+			<constant-value>2</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_FIRST_NAME_MAX_LENGTH</constant-name>
+			<constant-value>32</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_LAST_NAME_MIN_LENGTH</constant-name>
+			<constant-value>2</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_LAST_NAME_MAX_LENGTH</constant-name>
+			<constant-value>32</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_DOB_MIN_LENGTH</constant-name>
+			<constant-value>10</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_EMAIL_ADDRESS_MIN_LENGTH</constant-name>
+			<constant-value>6</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_EMAIL_ADDRESS_MAX_LENGTH</constant-name>
+			<constant-value>96</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_STREET_ADDRESS_MIN_LENGTH</constant-name>
+			<constant-value>5</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_STREET_ADDRESS_MAX_LENGTH</constant-name>
+			<constant-value>64</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_STREET_ADDRESS1_MIN_LENGTH</constant-name>
+			<constant-value>5</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_STREET_ADDRESS1_MAX_LENGTH</constant-name>
+			<constant-value>64</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_SUBURB_MIN_LENGTH</constant-name>
+			<constant-value>2</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_SUBURB_MAX_LENGTH</constant-name>
+			<constant-value>32</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_COMPANY_MIN_LENGTH</constant-name>
+			<constant-value>2</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_COMPANY_MAX_LENGTH</constant-name>
+			<constant-value>32</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_POSTCODE_MIN_LENGTH</constant-name>
+			<constant-value>4</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_POSTCODE_MAX_LENGTH</constant-name>
+			<constant-value>10</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_CITY_MIN_LENGTH</constant-name>
+			<constant-value>3</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_CITY_MAX_LENGTH</constant-name>
+			<constant-value>32</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_STATE_MIN_LENGTH</constant-name>
+			<constant-value>2</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_STATE_MAX_LENGTH</constant-name>
+			<constant-value>32</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_TELEPHONE_MIN_LENGTH</constant-name>
+			<constant-value>3</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_TELEPHONE_MAX_LENGTH</constant-name>
+			<constant-value>32</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_FAX_MIN_LENGTH</constant-name>
+			<constant-value>3</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_FAX_MAX_LENGTH</constant-name>
+			<constant-value>32</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_PASSWORD_MIN_LENGTH</constant-name>
+			<constant-value>5</constant-value>
+		</constant>
+		<constant>
+			<constant-name>ENTRY_PASSWORD_MAX_LENGTH</constant-name>
+			<constant-value>30</constant-value>
+		</constant>
+		<constant>
+			<constant-name>CC_OWNER_MIN_LENGTH</constant-name>
+			<constant-value>3</constant-value>
+		</constant>
+		<constant>
+			<constant-name>CC_NUMBER_MIN_LENGTH</constant-name>
+			<constant-value>10</constant-value>
+		</constant>
+		<constant>
+			<constant-name>REVIEW_TEXT_MIN_LENGTH</constant-name>
+			<constant-value>2</constant-value>
+		</constant>
+		<constant>
+			<constant-name>GIFT_REGISTRY_NAME_MAX_LENGTH</constant-name>
+			<constant-value>128</constant-value>
+		</constant>
+		<!-- =================================== -->
+		<!-- End of customization                                      -->
+		<!-- =================================== -->
+	</global>
+	<formset>
+		<!-- =================================== -->
+		<!-- ForgottenPasswordForm                               -->
+		<!-- =================================== -->
+		<form name="ForgottenPasswordForm">
+			<field property="emailAddr" depends="required,email">
+				<arg0 key="forgotten.password.body.email"/>
+			</field>
+		</form>
+		<form name="CheckoutForm">
+			<field property="payment" depends="required">
+				<arg0 key="checkout.payment.paymentmethod"/>
+			</field>
+			<field property="shipping" depends="required">
+				<arg0 key="checkout.delivery.shippingmethod"/>
+			</field>
+		</form>
+		<form name="PreferencesForm">
+			<field property="productPageSize" depends="intRange">
+				<arg0 key="preferences.body.productsperpage"/>
+				<arg1 name="intRange" key="${var:min}" resource="false"/>
+				<arg2 name="intRange" key="${var:max}" resource="false"/>
+				<var>
+					<var-name>min</var-name>
+					<var-value>1</var-value>
+				</var>
+				<var>
+					<var-name>max</var-name>
+					<var-value>100</var-value>
+				</var>
+			</field>
+			<field property="orderPageSize" depends="intRange">
+				<arg0 key="preferences.body.ordersperpage"/>
+				<arg1 name="intRange" key="${var:min}" resource="false"/>
+				<arg2 name="intRange" key="${var:max}" resource="false"/>
+				<var>
+					<var-name>min</var-name>
+					<var-value>1</var-value>
+				</var>
+				<var>
+					<var-name>max</var-name>
+					<var-value>100</var-value>
+				</var>
+			</field>
+			<field property="reviewPageSize" depends="intRange">
+				<arg0 key="preferences.body.reviewsperpage"/>
+				<arg1 name="intRange" key="${var:min}" resource="false"/>
+				<arg2 name="intRange" key="${var:max}" resource="false"/>
+				<var>
+					<var-name>min</var-name>
+					<var-value>1</var-value>
+				</var>
+				<var>
+					<var-name>max</var-name>
+					<var-value>100</var-value>
+				</var>
+			</field>
+		</form>
+		<form name="SearchProductForm">
+			<field property="priceFrom" depends="double">
+				<arg0 key="advanced.search.body.price.from"/>
+			</field>
+			<field property="priceTo" depends="double">
+				<arg0 key="advanced.search.body.price.to"/>
+			</field>
+			<field property="dateAddedFrom" depends="date">
+				<arg0 key="advanced.search.body.date.from"/>
+				<var>
+					<var-name>datePattern</var-name>
+					<var-value>${DATE_PATTERN}</var-value>
+				</var>
+			</field>
+			<field property="dateAddedTo" depends="date">
+				<arg0 key="advanced.search.body.date.to"/>
+				<var>
+					<var-name>datePattern</var-name>
+					<var-value>${DATE_PATTERN}</var-value>
+				</var>
+			</field>
+		</form>
+		<!-- =================================== -->
+		<!-- WriteReviewForm                                          -->
+		<!-- =================================== -->
+		<form name="WriteReviewForm">
+			<field property="rating" depends="required,intRange">
+				<msg name="intRange" key="write.review.body.rating.required"/>
+				<arg0 key="write.review.body.rating"/>
+				<arg1 name="intRange" key="${var:min}" resource="false"/>
+				<arg2 name="intRange" key="${var:max}" resource="false"/>
+				<var>
+					<var-name>min</var-name>
+					<var-value>1</var-value>
+				</var>
+				<var>
+					<var-name>max</var-name>
+					<var-value>5</var-value>
+				</var>
+			</field>
+			<field property="reviewText" depends="required,minlength">
+				<arg0 key="write.review.body.your.review"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${REVIEW_TEXT_MIN_LENGTH}</var-value>
+				</var>
+			</field>
+		</form>
+		<!-- =================================== -->
+		<!-- LoginForm                                                      -->
+		<!-- =================================== -->
+		<form name="LoginForm">
+			<field property="user" depends="required,minlength">
+				<arg0 key="login.body.email"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_EMAIL_ADDRESS_MIN_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="password" depends="required,minlength">
+				<arg0 key="login.body.password"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MIN_LENGTH}</var-value>
+				</var>
+			</field>
+		</form>
+		<!-- =================================== -->
+		<!-- RegisterCustomerForm                                  -->
+		<!-- =================================== -->
+		<form name="RegisterCustomerForm">
+			<field property="gender" depends="required">
+				<arg0 key="register.customer.body.gender"/>
+			</field>
+			<field property="firstName" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.first.name"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_FIRST_NAME_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_FIRST_NAME_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="lastName" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.last.name"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_LAST_NAME_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_LAST_NAME_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="birthDateString" depends="required,minlength,date">
+				<arg0 key="register.customer.body.dob"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>5</var-value>
+				</var>
+				<var>
+					<var-name>datePattern</var-name>
+					<var-value>${DATE_PATTERN}</var-value>
+				</var>
+			</field>
+			<field property="emailAddr" depends="required,email,charsNotAllowed">
+				<arg0 key="register.customer.body.email"/>
+			</field>
+			<field property="addrEmail" depends="email,charsNotAllowed">
+				<arg0 key="register.customer.body.email"/>
+			</field>
+			<field property="streetAddress" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.street.addr"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_STREET_ADDRESS_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_STREET_ADDRESS_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="streetAddress1" depends="minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.street.addr1"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_STREET_ADDRESS1_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_STREET_ADDRESS1_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="postcode" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.postcode"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_POSTCODE_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_POSTCODE_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="city" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.city"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_CITY_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_CITY_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="state" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.state"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_STATE_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_STATE_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="countryId" depends="required,intRange">
+				<msg name="intRange" key="register.customer.body.country.required"/>
+				<arg0 key="register.customer.body.country"/>
+				<arg1 name="intRange" key="${var:min}" resource="false"/>
+				<arg2 name="intRange" key="${var:max}" resource="false"/>
+				<var>
+					<var-name>min</var-name>
+					<var-value>0</var-value>
+				</var>
+				<var>
+					<var-name>max</var-name>
+					<var-value>1000</var-value>
+				</var>
+			</field>
+			<field property="telephoneNumber" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.tel.number"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="telephoneNumber1" depends="minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.tel.number1"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="addrTelephone" depends="minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.tel.number"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="addrTelephone1" depends="minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.tel.number1"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="faxNumber" depends="minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.fax.number"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_TELEPHONE_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="company" depends="minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.company.name"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_COMPANY_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_COMPANY_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="suburb" depends="minlength,maxlength,charsNotAllowed">
+				<arg0 key="register.customer.body.suburb"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_SUBURB_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_SUBURB_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="password" depends="required,minlength,maxlength">
+				<arg0 key="register.customer.body.password"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="passwordConfirmation" depends="required,minlength,maxlength,confirmPassword">
+				<arg0 key="register.customer.body.confirm.password"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MAX_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>secondProperty</var-name>
+					<var-value>password</var-value>
+				</var>
+			</field>
+			<!--
+			This is an example of validation for custom fields.
+			-->
+			<field property="customerCustom1" depends="minlength,charsNotAllowed">
+				<arg0 key="register.customer.body.custom1"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>5</var-value>
+				</var>
+			</field>
+		</form>
+		<!-- =================================== -->
+		<!-- ChangePasswordForm                                  -->
+		<!-- =================================== -->
+		<form name="ChangePasswordForm">
+			<field property="currentPassword" depends="required,minlength,maxlength">
+				<arg0 key="change.password.body.currentpassword"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="newPassword" depends="required,minlength,maxlength">
+				<arg0 key="change.password.body.newpassword"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="confirmPassword" depends="required,minlength,maxlength,confirmPassword">
+				<arg0 key="change.password.body.passwordconfirmation"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MIN_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_PASSWORD_MAX_LENGTH}</var-value>
+				</var>
+				<var>
+					<var-name>secondProperty</var-name>
+					<var-value>newPassword</var-value>
+				</var>
+			</field>
+		</form>
+		<!-- =================================== -->
+		<!-- Credit Card Form                                            -->
+		<!-- =================================== -->
+		<form name="CreditCardForm">
+			<field property="number" depends="required,creditCard">
+				<arg0 key="checkout.cc.number"/>
+			</field>
+			<field property="owner" depends="required">
+				<arg0 key="checkout.cc.ccowner"/>
+			</field>
+			<field property="cvv" depends="required,integer">
+				<arg0 key="checkout.cc.cvv"/>
+			</field>
+			<field property="postcode" depends="required">
+				<arg0 key="checkout.cc.postcode"/>
+			</field>
+			<field property="streetAddress" depends="required">
+				<arg0 key="checkout.cc.streetAddress"/>
+			</field>
+		</form>
+		<!-- =================================== -->
+		<!-- CreateGiftRegistry Form                                            -->
+		<!-- =================================== -->
+		<form name="CreateGiftRegistryForm">
+			<field property="name" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="create.gift.registry.body.event.name"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>1</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${GIFT_REGISTRY_NAME_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="linkUrl" depends="charsNotAllowed">
+				<arg0 key="create.gift.registry.body.event.link.url"/>
+			</field>			
+			<field property="customerFirstName" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="create.gift.registry.body.groom.names"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>1</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_FIRST_NAME_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="customerLastName" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="create.gift.registry.body.groom.names"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>1</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_LAST_NAME_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="customer1FirstName" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="create.gift.registry.body.bride.names"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>1</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_FIRST_NAME_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="customer1LastName" depends="required,minlength,maxlength,charsNotAllowed">
+				<arg0 key="create.gift.registry.body.bride.names"/>
+				<arg1 name="minlength" key="${var:minlength}" resource="false"/>
+				<arg1 name="maxlength" key="${var:maxlength}" resource="false"/>
+				<var>
+					<var-name>minlength</var-name>
+					<var-value>1</var-value>
+				</var>
+				<var>
+					<var-name>maxlength</var-name>
+					<var-value>${ENTRY_LAST_NAME_MAX_LENGTH}</var-value>
+				</var>
+			</field>
+			<field property="eventDateString" depends="required,date">
+				<arg0 key="create.gift.registry.body.event.date"/>
+				<var>
+					<var-name>datePattern</var-name>
+					<var-value>${DATE_PATTERN}</var-value>
+				</var>
+			</field>					
+		</form>
+	</formset>
+</form-validation>

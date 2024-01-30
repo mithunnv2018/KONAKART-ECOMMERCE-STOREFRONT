@@ -1,0 +1,2293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM ID="Exception" LINK_SHAPE="-1,16" NAME="forward0"
+  PATH="/Exception.do" SHAPE="32,17,0,0" TARGET="action119"
+  TITLE="Exception" TYPE="forward" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="Unavailable" LINK_SHAPE="-1,16" NAME="forward1"
+  PATH="/Unavailable.do" SHAPE="32,160,99,21" TARGET="action189"
+  TITLE="Unavailable" TYPE="forward" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="welcome" LINK_SHAPE="-1,88" NAME="forward2"
+  PATH="/Welcome.do" SHAPE="848,257,0,0" TARGET="action31"
+  TITLE="welcome" TYPE="forward" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#ShowSearchByManufacturerResultsByLink"
+  NAME="action0" PATH="/ShowSearchByManufacturerResultsByLink"
+  SHAPE="304,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="SearchByManufacturerSubmit" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="SearchByManufacturerSubmit" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#FilterSearchByManufacturer" NAME="action1"
+  PATH="/FilterSearchByManufacturer" SHAPE="304,257,0,0"
+  TITLE="FilterByManufacturerForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProducts" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ChangeDeliveryAddrSubmit" NAME="action2"
+  PATH="/ChangeDeliveryAddrSubmit" SHAPE="304,1457,0,0"
+  TITLE="ChangeAddrForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDeliveryNoReset" NAME="forward1"
+   PATH="/CheckoutDeliveryNoReset.do" SHAPE="-1,16" TARGET="action62"
+   TITLE="CheckoutDeliveryNoReset" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#BluePay" NAME="action3" PATH="/BluePay"
+  SHAPE="304,4929,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AboutMenu" NAME="action4" PATH="/AboutMenu"
+  SHAPE="32,9329,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action4" PATH="about.menu.page"
+   SHAPE="-1,16" TARGET="page0" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#Elink" NAME="action5" PATH="/Elink"
+  SHAPE="304,5601,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ChangePaymentAddrSubmit" NAME="action6"
+  PATH="/ChangePaymentAddrSubmit" SHAPE="32,1857,0,0"
+  TITLE="ChangeAddrForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutPayment" NAME="forward1"
+   PATH="/CheckoutPayment.do" SHAPE="-1,24" TARGET="action88"
+   TITLE="CheckoutPayment" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowAllSpecials" NAME="action7"
+  PATH="/ShowAllSpecials" SHAPE="304,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowAllSpecials" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowAllSpecials" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowHomepage" NAME="action8" PATH="/ShowHomepage"
+  SHAPE="32,9441,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowHomepage" NAME="forward0"
+   PATH="/CatalogShowHomepagePage.do" SHAPE="-1,16" TARGET="action187"
+   TITLE="ShowHomepage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogNewAddrPage" NAME="action9"
+  PATH="/CatalogNewAddrPage" SHAPE="576,5761,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action9" PATH="catalog.newaddr.page"
+   SHAPE="-1,16" TARGET="page1" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowImage" NAME="action10" PATH="/ShowImage"
+  SHAPE="32,4417,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowImage" NAME="forward0"
+   PATH="/CatalogShowImagePage.do" SHAPE="-1,16" TARGET="action198"
+   TITLE="ShowImage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#LogIn" NAME="action11" PATH="/LogIn"
+  SHAPE="848,1281,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="LoggedIn" NAME="forward0"
+   PATH="/CatalogAfterLogin.do" SHAPE="-1,56" TARGET="action97"
+   TITLE="LoggedIn" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="LoginPage" NAME="forward1"
+   PATH="/CatalogLogInPage.do" SHAPE="-1,16" TARGET="action183"
+   TITLE="LoginPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogAdvancedSearchPage" NAME="action12"
+  PATH="/CatalogAdvancedSearchPage" SHAPE="240,9569,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action12"
+   PATH="catalog.advancedsearch.page" SHAPE="-1,16" TARGET="page2"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ChangePasswordSubmit" NAME="action13"
+  PATH="/ChangePasswordSubmit" SHAPE="32,1265,0,0"
+  TITLE="ChangePasswordForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Error" NAME="forward2"
+   PATH="/ChangePassword.do" TARGET="action164" TITLE="Error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#WriteReviewSubmit" NAME="action14"
+  PATH="/WriteReviewSubmit" SHAPE="32,3521,0,0" TITLE="WriteReviewForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="WriteReviewSubmit" NAME="forward1"
+   PATH="/ShowReviews.do" SHAPE="-1,16" TARGET="action78"
+   TITLE="WriteReviewSubmit" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogChangePasswordPage" NAME="action15"
+  PATH="/CatalogChangePasswordPage" SHAPE="576,1265,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action15"
+   PATH="catalog.changepassword.page" TARGET="page3" TITLE="forward"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowSearchByManufacturerResults" NAME="action16"
+  PATH="/ShowSearchByManufacturerResults" SHAPE="304,257,0,0"
+  TITLE="FilterByManufacturerForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="SearchByManufacturerSubmit" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="SearchByManufacturerSubmit" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AdminLoginSubmit" NAME="action17"
+  PATH="/AdminLoginSubmit" SHAPE="576,2273,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="LoginSubmitError" NAME="forward0"
+   PATH="/LogIn.do" TARGET="action11" TITLE="LoginSubmitError"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="LoginSubmit" NAME="forward1"
+   PATH="/CatalogAfterLogin.do" SHAPE="-1,56" TARGET="action97"
+   TITLE="LoginSubmit" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowReviewDetails" NAME="action18"
+  PATH="/ShowReviewDetails" SHAPE="32,241,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowReviewDetails" NAME="forward0"
+   PATH="/CatalogShowReviewDetailsPage.do" TARGET="action81"
+   TITLE="ShowReviewDetails" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SetLocale_pt_BR" NAME="action19"
+  PATH="/SetLocale_pt_BR" SHAPE="1120,1857,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="SetLocale" NAME="forward0"
+   PATH="/CatalogMainPage.do" SHAPE="-1,88" TARGET="action20"
+   TITLE="SetLocale" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogMainPage" NAME="action20"
+  PATH="/CatalogMainPage" SHAPE="1392,257,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action20" PATH="catalog.main.page"
+   SHAPE="-1,16" TARGET="page4" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowProductsForManufacturer" NAME="action21"
+  PATH="/ShowProductsForManufacturer" SHAPE="304,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProductsForManufacturer" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProductsForManufacturer" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#NavigateRewardPoints" NAME="action22"
+  PATH="/NavigateRewardPoints" SHAPE="304,1281,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowRewardPoints" NAME="forward1"
+   PATH="/CatalogShowRewardPointsPage.do" SHAPE="-1,64"
+   TARGET="action98" TITLE="ShowRewardPoints" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#RemoveTags" NAME="action23" PATH="/RemoveTags"
+  SHAPE="304,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProducts" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutDeliverySubmit" NAME="action24"
+  PATH="/CheckoutDeliverySubmit" SHAPE="32,1617,0,0"
+  TITLE="CheckoutForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutPayment" NAME="forward1"
+   PATH="/CheckoutPayment.do" SHAPE="-1,24" TARGET="action88"
+   TITLE="CheckoutPayment" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward2"
+   PATH="/CheckoutDelivery.do" SHAPE="-1,80" TARGET="action76"
+   TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogWriteReviewPage" NAME="action25"
+  PATH="/CatalogWriteReviewPage" SHAPE="576,1265,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action25" PATH="catalog.writereview.page"
+   SHAPE="-1,72" TARGET="page5" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#QuickSearch" NAME="action26" PATH="/QuickSearch"
+  SHAPE="304,257,0,0" TITLE="SearchProductForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="QuickSearch" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84" TITLE="QuickSearch"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CommideaVanguardPayment" NAME="action27"
+  PATH="/CommideaVanguardPayment" SHAPE="576,6177,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action27"
+   PATH="catalog.commideacreditcard.page" SHAPE="-1,16" TARGET="page6"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ForgotPasswordSubmit" NAME="action28"
+  PATH="/ForgotPasswordSubmit" SHAPE="32,3665,0,0"
+  TITLE="ForgottenPasswordForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Error" NAME="forward1"
+   PATH="/ForgotPassword.do" SHAPE="-1,16" TARGET="action36"
+   TITLE="Error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SortProd" NAME="action29" PATH="/SortProd"
+  SHAPE="304,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProducts" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectProd" NAME="action30" PATH="/SelectProd"
+  SHAPE="576,241,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProductDetails" NAME="forward0"
+   PATH="/CatalogShowProdDetailsPage.do" SHAPE="-1,88"
+   TARGET="action133" TITLE="ShowProductDetails" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#Welcome" NAME="action31" PATH="/Welcome"
+  SHAPE="1120,241,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Success" NAME="forward0"
+   PATH="/CatalogMainPage.do" SHAPE="-1,88" TARGET="action20"
+   TITLE="Success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AuthorizeNet" NAME="action32" PATH="/AuthorizeNet"
+  SHAPE="304,5777,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#FilterSearchByCategory" NAME="action33"
+  PATH="/FilterSearchByCategory" SHAPE="304,257,0,0"
+  TITLE="FilterByCategoryForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProducts" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#BarclaycardSmartPayApiResponse" NAME="action34"
+  PATH="/BarclaycardSmartPayApiResponse" SHAPE="304,5953,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutPaymentError.do" SHAPE="-1,72" TARGET="action196"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutPaymentPage" NAME="action35"
+  PATH="/CatalogCheckoutPaymentPage" SHAPE="576,1857,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action35"
+   PATH="catalog.checkoutpayment.page" SHAPE="-1,16" TARGET="page7"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ForgotPassword" NAME="action36"
+  PATH="/ForgotPassword" SHAPE="304,3681,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action36"
+   PATH="/CatalogForgotPasswordPage.do" SHAPE="-1,80" TARGET="action60"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#FilterProdByTags" NAME="action37"
+  PATH="/FilterProdByTags" SHAPE="304,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProducts" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#NewAddrSubmit" NAME="action38" PATH="/NewAddrSubmit"
+  SHAPE="32,3809,0,0" TITLE="RegisterCustomerForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ApplicationError" NAME="forward1"
+   PATH="/NewAddr.do" SHAPE="-1,88" TARGET="action51"
+   TITLE="ApplicationError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="AddressBook" NAME="forward2"
+   PATH="/AddressBook.do" SHAPE="-1,32" TARGET="action115"
+   TITLE="AddressBook" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowGiftRegistryItemsPage" NAME="action39"
+  PATH="/CatalogShowGiftRegistryItemsPage" SHAPE="576,4913,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action39"
+   PATH="catalog.showgiftregistryitems.page" SHAPE="-1,16"
+   TARGET="page8" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditNewsletter" NAME="action40"
+  PATH="/EditNewsletter" SHAPE="304,1281,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditNewsletterPage" NAME="forward1"
+   PATH="/CatalogEditNewsletterPage.do" SHAPE="-1,16" TARGET="action169"
+   TITLE="EditNewsletterPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowGiftRegistrySearchResults" NAME="action41"
+  PATH="/ShowGiftRegistrySearchResults" SHAPE="32,241,0,0"
+  TITLE="SearchGiftRegistryForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="GiftRegistrySearchSubmit" NAME="forward0"
+   PATH="/CatalogShowGiftRegistriesPage.do" SHAPE="-1,16"
+   TARGET="action179" TITLE="GiftRegistrySearchSubmit" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutFinishedSubmit" NAME="action42"
+  PATH="/CheckoutFinishedSubmit" SHAPE="304,2817,0,0"
+  TITLE="EditNotifiedProductForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#PrivacyNotice" NAME="action43" PATH="/PrivacyNotice"
+  SHAPE="32,9665,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="PrivacyNotice" NAME="forward0"
+   PATH="/CatalogPrivacyNoticePage.do" SHAPE="-1,16" TARGET="action168"
+   TITLE="PrivacyNotice" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowCatsPage" NAME="action44"
+  PATH="/CatalogShowCatsPage" SHAPE="576,241,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action44" PATH="catalog.showcats.page"
+   TARGET="page9" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#BarclaycardSmartPayApi" NAME="action45"
+  PATH="/BarclaycardSmartPayApi" SHAPE="304,7297,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Redirect3dSecure" NAME="forward3"
+   PATH="/CatalogCheckoutExternalPaymentPage.do" SHAPE="-1,64"
+   TARGET="action143" TITLE="Redirect3dSecure" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#PayJunction" NAME="action46" PATH="/PayJunction"
+  SHAPE="304,7649,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogGiftRegistrySearchPage" NAME="action47"
+  PATH="/CatalogGiftRegistrySearchPage" SHAPE="240,9793,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action47"
+   PATH="catalog.gift.registry.search.page" SHAPE="-1,16"
+   TARGET="page10" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#NavigateAllOrders" NAME="action48"
+  PATH="/NavigateAllOrders" SHAPE="304,1281,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowAllOrders" NAME="forward1"
+   PATH="/CatalogShowAllOrdersPage.do" TARGET="action82"
+   TITLE="ShowAllOrders" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ChangeDeliveryAddr" NAME="action49"
+  PATH="/ChangeDeliveryAddr" SHAPE="32,3985,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ChangeDeliveryAddrPage" NAME="forward1"
+   PATH="/CatalogChangeDeliveryAddrPage.do" SHAPE="-1,16"
+   TARGET="action156" TITLE="ChangeDeliveryAddrPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShippingAndReturnsPage" NAME="action50"
+  PATH="/CatalogShippingAndReturnsPage" SHAPE="240,9905,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action50"
+   PATH="catalog.shippingandreturns.page" SHAPE="-1,16" TARGET="page11"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#NewAddr" NAME="action51" PATH="/NewAddr"
+  SHAPE="304,3825,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="NewAddrPage" NAME="forward1"
+   PATH="/CatalogNewAddrPage.do" SHAPE="-1,80" TARGET="action9"
+   TITLE="NewAddrPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CommideaVanguard" NAME="action52"
+  PATH="/CommideaVanguard" SHAPE="304,6625,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CreditCard" NAME="forward1"
+   PATH="/CommideaVanguardPayment.do" SHAPE="-1,40" TARGET="action27"
+   TITLE="CreditCard" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EnableCustomer" NAME="action53"
+  PATH="/EnableCustomer" SHAPE="576,1265,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ManagePreferences" NAME="action54"
+  PATH="/ManagePreferences" SHAPE="304,4609,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ManagePreferencesPage" NAME="forward1"
+   PATH="/CatalogManagePreferencesPage.do" SHAPE="-1,16"
+   TARGET="action70" TITLE="ManagePreferencesPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SortGiftRegistryItems" NAME="action55"
+  PATH="/SortGiftRegistryItems" SHAPE="32,241,0,0"
+  TITLE="EditWishListForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowGiftRegistryItems" NAME="forward0"
+   PATH="/CatalogShowGiftRegistryItemsNoEditPage.do" TARGET="action159"
+   TITLE="ShowGiftRegistryItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#USAePay" NAME="action56" PATH="/USAePay"
+  SHAPE="304,5425,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#NavigateAllRev" NAME="action57"
+  PATH="/NavigateAllRev" SHAPE="32,241,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowAllReviews" NAME="forward0"
+   PATH="/CatalogShowAllReviewsPage.do" TARGET="action174"
+   TITLE="ShowAllReviews" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#LogOut" NAME="action58" PATH="/LogOut"
+  SHAPE="32,10001,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="LogoutPage" NAME="forward0"
+   PATH="/CatalogLogOutPage.do" SHAPE="-1,16" TARGET="action204"
+   TITLE="LogoutPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="OlegLogoutPage" NAME="forward1"
+   PATH="/Welcome.do" TARGET="action31" TITLE="OlegLogoutPage"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#WorldPayCallback" NAME="action59"
+  PATH="/WorldPayCallback" SHAPE="32,10897,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#CatalogForgotPasswordPage" NAME="action60"
+  PATH="/CatalogForgotPasswordPage" SHAPE="576,5585,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action60"
+   PATH="catalog.forgotpassword.page" SHAPE="-1,16" TARGET="page12"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#WriteReview" NAME="action61" PATH="/WriteReview"
+  SHAPE="304,1281,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="WriteReview" NAME="forward1"
+   PATH="/CatalogWriteReviewPage.do" TARGET="action25"
+   TITLE="WriteReview" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutDeliveryNoReset" NAME="action62"
+  PATH="/CheckoutDeliveryNoReset" SHAPE="576,1441,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward1"
+   PATH="/CatalogCheckoutDeliveryPage.do" SHAPE="-1,24"
+   TARGET="action73" TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditGiftRegistry" NAME="action63"
+  PATH="/EditGiftRegistry" SHAPE="304,2993,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditGiftRegistryPage" NAME="forward1"
+   PATH="/CatalogEditGiftRegistryPage.do" SHAPE="-1,16"
+   TARGET="action184" TITLE="EditGiftRegistryPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward2"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutExternalPaymentErrorPage"
+  NAME="action64" PATH="/CatalogCheckoutExternalPaymentErrorPage"
+  SHAPE="848,5953,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action64"
+   PATH="catalog.external.payment.error.page" SHAPE="-1,16"
+   TARGET="page13" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ChangeGiftRegistryAddr" NAME="action65"
+  PATH="/ChangeGiftRegistryAddr" SHAPE="32,4129,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ChangeGiftRegistryAddrPage" NAME="forward1"
+   PATH="/CatalogChangeGiftRegistryAddrPage.do" SHAPE="-1,16"
+   TARGET="action120" TITLE="ChangeGiftRegistryAddrPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutExternalPaymentFromFramePage"
+  NAME="action66" PATH="/CatalogCheckoutExternalPaymentFromFramePage"
+  SHAPE="32,10113,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action66"
+   PATH="catalog.external.payment.from.frame.page" SHAPE="-1,16"
+   TARGET="page14" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#RepeatOrder" NAME="action67" PATH="/RepeatOrder"
+  SHAPE="32,2033,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutConfirmation" NAME="forward1"
+   PATH="/CheckoutConfirmation.do" SHAPE="-1,24" TARGET="action145"
+   TITLE="CheckoutConfirmation" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowCartItems" NAME="forward2"
+   PATH="/ShowCartItems.do" SHAPE="-1,64" TARGET="action188"
+   TITLE="ShowCartItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="OnePageCheckout" NAME="forward3"
+   PATH="/CatalogOnePageCheckoutPage.do" SHAPE="-1,48"
+   TARGET="action158" TITLE="OnePageCheckout" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward4"
+   PATH="/CatalogAfterLoginPage.do" SHAPE="-1,16" TARGET="action111"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#LoginSubmit" NAME="action68" PATH="/LoginSubmit"
+  SHAPE="32,513,0,0" TITLE="LoginForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ChangePassword" NAME="forward0"
+   PATH="/ChangePassword.do" TARGET="action164" TITLE="ChangePassword"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="PreSelectProd" NAME="forward1"
+   PATH="/PreSelectProd.do" SHAPE="-1,16" TARGET="action142"
+   TITLE="PreSelectProd" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ManagePreferences" NAME="forward2"
+   PATH="/ManagePreferences.do" SHAPE="-1,80" TARGET="action54"
+   TITLE="ManagePreferences" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditAddr" NAME="forward3" PATH="/EditAddr.do"
+   SHAPE="-1,56" TARGET="action129" TITLE="EditAddr" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowAllOrders" NAME="forward4"
+   PATH="/ShowAllOrders.do" TARGET="action90" TITLE="ShowAllOrders"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="NewAddr" NAME="forward5" PATH="/NewAddr.do"
+   SHAPE="-1,88" TARGET="action51" TITLE="NewAddr" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowRewardPoints" NAME="forward6"
+   PATH="/ShowRewardPoints.do" TARGET="action113"
+   TITLE="ShowRewardPoints" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="LoginSubmitError" NAME="forward7"
+   PATH="/LogIn.do" TARGET="action11" TITLE="LoginSubmitError"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="DeleteAddr" NAME="forward8"
+   PATH="/DeleteAddr.do" SHAPE="-1,48" TARGET="action190"
+   TITLE="DeleteAddr" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward9"
+   PATH="/CheckoutDelivery.do" SHAPE="-1,80" TARGET="action76"
+   TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditCustomer" NAME="forward10"
+   PATH="/EditCustomer.do" SHAPE="-1,64" TARGET="action116"
+   TITLE="EditCustomer" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward11"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditNewsletter" NAME="forward12"
+   PATH="/EditNewsletter.do" TARGET="action40" TITLE="EditNewsletter"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowOrderDetails" NAME="forward13"
+   PATH="/ShowOrderDetails.do" TARGET="action165"
+   TITLE="ShowOrderDetails" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="WriteReview" NAME="forward14"
+   PATH="/WriteReview.do" TARGET="action61" TITLE="WriteReview"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CreateGiftRegistry" NAME="forward15"
+   PATH="/CreateGiftRegistry.do" SHAPE="-1,24" TARGET="action177"
+   TITLE="CreateGiftRegistry" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ResetNotification" NAME="forward16"
+   PATH="/ResetNotification.do" SHAPE="-1,64" TARGET="action192"
+   TITLE="ResetNotification" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="AddressBook" NAME="forward17"
+   PATH="/AddressBook.do" SHAPE="-1,32" TARGET="action115"
+   TITLE="AddressBook" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="LoginSubmit" NAME="forward18"
+   PATH="/CatalogAfterLogin.do" SHAPE="-1,56" TARGET="action97"
+   TITLE="LoginSubmit" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="SetNotification" NAME="forward19"
+   PATH="/SetNotification.do" SHAPE="-1,48" TARGET="action194"
+   TITLE="SetNotification" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditNotifiedProducts" NAME="forward20"
+   PATH="/EditNotifiedProducts.do" TARGET="action86"
+   TITLE="EditNotifiedProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditGiftRegistrySubmit" NAME="action69"
+  PATH="/EditGiftRegistrySubmit" SHAPE="304,3169,0,0"
+  TITLE="CreateGiftRegistryForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogManagePreferencesPage" NAME="action70"
+  PATH="/CatalogManagePreferencesPage" SHAPE="576,4593,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action70"
+   PATH="catalog.manage.preferences.page" SHAPE="-1,16" TARGET="page15"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowWishListItemsPage" NAME="action71"
+  PATH="/CatalogShowWishListItemsPage" SHAPE="576,4737,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action71"
+   PATH="catalog.showwishlistitems.page" SHAPE="-1,16" TARGET="page16"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectCurrency" NAME="action72"
+  PATH="/SelectCurrency" SHAPE="848,257,0,0" TITLE="SelectCurrencyForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="MainPage" NAME="forward0" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="MainPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutDeliveryPage" NAME="action73"
+  PATH="/CatalogCheckoutDeliveryPage" SHAPE="848,1457,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action73"
+   PATH="catalog.checkoutdelivery.page" SHAPE="-1,16" TARGET="page17"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditNewsletterSubmit" NAME="action74"
+  PATH="/EditNewsletterSubmit" SHAPE="304,3537,0,0"
+  TITLE="NewsletterForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#BarclaycardSmartPayApiNotification" NAME="action75"
+  PATH="/BarclaycardSmartPayApiNotification" SHAPE="240,10913,0,0"
+  TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#CheckoutDelivery" NAME="action76"
+  PATH="/CheckoutDelivery" SHAPE="576,1617,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowCartItems" NAME="forward1"
+   PATH="/ShowCartItems.do" SHAPE="-1,64" TARGET="action188"
+   TITLE="ShowCartItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="OnePageCheckout" NAME="forward2"
+   PATH="/CatalogOnePageCheckoutPage.do" SHAPE="-1,48"
+   TARGET="action158" TITLE="OnePageCheckout" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="PunchoutCheckout" NAME="forward3"
+   PATH="/PunchoutCheckout.do" SHAPE="-1,16" TARGET="action182"
+   TITLE="PunchoutCheckout" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward4"
+   PATH="/CatalogCheckoutDeliveryPage.do" SHAPE="-1,24"
+   TARGET="action73" TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EPayCallback" NAME="action77" PATH="/EPayCallback"
+  SHAPE="448,10897,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#ShowReviews" NAME="action78" PATH="/ShowReviews"
+  SHAPE="304,3537,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowReviews" NAME="forward0"
+   PATH="/CatalogShowReviewsPage.do" SHAPE="-1,48" TARGET="action114"
+   TITLE="ShowReviews" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShippingAndReturns" NAME="action79"
+  PATH="/ShippingAndReturns" SHAPE="32,9889,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShippingAndReturns" NAME="forward0"
+   PATH="/CatalogShippingAndReturnsPage.do" SHAPE="-1,16"
+   TARGET="action50" TITLE="ShippingAndReturns" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogAboutUsPage" NAME="action80"
+  PATH="/CatalogAboutUsPage" SHAPE="240,10241,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action80" PATH="catalog.aboutus.page"
+   SHAPE="-1,16" TARGET="page18" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowReviewDetailsPage" NAME="action81"
+  PATH="/CatalogShowReviewDetailsPage" SHAPE="304,257,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action81"
+   PATH="catalog.showreview.details.page" TARGET="page19"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowAllOrdersPage" NAME="action82"
+  PATH="/CatalogShowAllOrdersPage" SHAPE="576,1265,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action82" PATH="catalog.showallorders.page"
+   SHAPE="-1,88" TARGET="page20" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#Netpayintl" NAME="action83" PATH="/Netpayintl"
+  SHAPE="304,7825,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowProdsPage" NAME="action84"
+  PATH="/CatalogShowProdsPage" SHAPE="576,241,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action84" PATH="catalog.showprods.page"
+   SHAPE="-1,16" TARGET="page21" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectCat" NAME="action85" PATH="/SelectCat"
+  SHAPE="304,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowCategories" NAME="forward0"
+   PATH="/CatalogShowCatsPage.do" TARGET="action44"
+   TITLE="ShowCategories" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowProducts" NAME="forward1"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward2" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditNotifiedProducts" NAME="action86"
+  PATH="/EditNotifiedProducts" SHAPE="304,1281,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditNotifiedProductsPage" NAME="forward1"
+   PATH="/CatalogEditNotifiedProductsPage.do" TARGET="action89"
+   TITLE="EditNotifiedProductsPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AboutUs" NAME="action87" PATH="/AboutUs"
+  SHAPE="32,10225,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="AboutUs" NAME="forward0"
+   PATH="/CatalogAboutUsPage.do" SHAPE="-1,16" TARGET="action80"
+   TITLE="AboutUs" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutPayment" NAME="action88"
+  PATH="/CheckoutPayment" SHAPE="304,1633,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutPayment" NAME="forward1"
+   PATH="/CatalogCheckoutPaymentPage.do" SHAPE="-1,24" TARGET="action35"
+   TITLE="CheckoutPayment" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward2"
+   PATH="/CheckoutDelivery.do" SHAPE="-1,80" TARGET="action76"
+   TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogEditNotifiedProductsPage" NAME="action89"
+  PATH="/CatalogEditNotifiedProductsPage" SHAPE="576,1265,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action89"
+   PATH="catalog.EditNotifiedProducts.page" SHAPE="-1,56"
+   TARGET="page22" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowAllOrders" NAME="action90" PATH="/ShowAllOrders"
+  SHAPE="304,1281,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowAllOrders" NAME="forward1"
+   PATH="/CatalogShowAllOrdersPage.do" TARGET="action82"
+   TITLE="ShowAllOrders" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogContactUsPage" NAME="action91"
+  PATH="/CatalogContactUsPage" SHAPE="240,10353,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action91" PATH="catalog.contactus.page"
+   SHAPE="-1,16" TARGET="page23" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowCartItemsPage" NAME="action92"
+  PATH="/CatalogShowCartItemsPage" SHAPE="1120,2273,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action92" PATH="catalog.showcartitems.page"
+   SHAPE="-1,16" TARGET="page24" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditCustomerSubmit" NAME="action93"
+  PATH="/EditCustomerSubmit" SHAPE="32,2801,0,0"
+  TITLE="RegisterCustomerForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditCustomerSubmitError" NAME="forward1"
+   PATH="/EditCustomer.do" SHAPE="-1,64" TARGET="action116"
+   TITLE="EditCustomerSubmitError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward2"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#NavigateRev" NAME="action94" PATH="/NavigateRev"
+  SHAPE="304,4145,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowReviews" NAME="forward0"
+   PATH="/CatalogShowReviewsPage.do" SHAPE="-1,48" TARGET="action114"
+   TITLE="ShowReviews" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#PunchoutEntry" NAME="action95" PATH="/PunchoutEntry"
+  SHAPE="848,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward0" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#PayPalCallback" NAME="action96"
+  PATH="/PayPalCallback" SHAPE="656,10913,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#CatalogAfterLogin" NAME="action97"
+  PATH="/CatalogAfterLogin" SHAPE="1120,2033,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward0"
+   PATH="/CatalogAfterLoginPage.do" SHAPE="-1,16" TARGET="action111"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowRewardPointsPage" NAME="action98"
+  PATH="/CatalogShowRewardPointsPage" SHAPE="576,4273,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action98"
+   PATH="catalog.showrewardpoints.page" SHAPE="-1,16" TARGET="page25"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutFinishedPage" NAME="action99"
+  PATH="/CatalogCheckoutFinishedPage" SHAPE="848,5425,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action99"
+   PATH="catalog.checkoutfinished.page" SHAPE="-1,16" TARGET="page26"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CreateGiftRegistrySubmit" NAME="action100"
+  PATH="/CreateGiftRegistrySubmit" SHAPE="304,3681,0,0"
+  TITLE="CreateGiftRegistryForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#DeleteAddrSubmit" NAME="action101"
+  PATH="/DeleteAddrSubmit" SHAPE="304,8881,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="AddressBook" NAME="forward1"
+   PATH="/AddressBook.do" SHAPE="-1,32" TARGET="action115"
+   TITLE="AddressBook" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogConditionsOfUsePage" NAME="action102"
+  PATH="/CatalogConditionsOfUsePage" SHAPE="240,10465,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action102"
+   PATH="catalog.conditionsofuse.page" SHAPE="-1,16" TARGET="page27"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#WorldPayXMLRedirect" NAME="action103"
+  PATH="/WorldPayXMLRedirect" SHAPE="304,6193,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutError" NAME="forward1"
+   PATH="/CheckoutPaymentError.do" SHAPE="-1,72" TARGET="action196"
+   TITLE="CheckoutError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#GiftRegistryListSubmit" NAME="action104"
+  PATH="/GiftRegistryListSubmit" SHAPE="576,1265,0,0"
+  TITLE="EditWishListForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowCartItems" NAME="forward0"
+   PATH="/ShowCartItems.do" SHAPE="-1,64" TARGET="action188"
+   TITLE="ShowCartItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowAllReviews" NAME="action105"
+  PATH="/ShowAllReviews" SHAPE="32,241,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowAllReviews" NAME="forward0"
+   PATH="/CatalogShowAllReviewsPage.do" TARGET="action174"
+   TITLE="ShowAllReviews" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowRandomReviewDetails" NAME="action106"
+  PATH="/ShowRandomReviewDetails" SHAPE="32,241,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowRandomReviewDetails" NAME="forward0"
+   PATH="/CatalogShowReviewDetailsPage.do" TARGET="action81"
+   TITLE="ShowRandomReviewDetails" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CommideaVanguard3DSecure" NAME="action107"
+  PATH="/CommideaVanguard3DSecure" SHAPE="304,6513,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action107"
+   PATH="catalog.commidea3dsecurecheck.page" SHAPE="-1,16"
+   TARGET="page28" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditCartSubmit" NAME="action108"
+  PATH="/EditCartSubmit" SHAPE="304,1873,0,0" TITLE="EditCartForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowCart" NAME="forward1"
+   PATH="/ShowCartItems.do" SHAPE="-1,64" TARGET="action188"
+   TITLE="ShowCart" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward2"
+   PATH="/CheckoutDelivery.do" SHAPE="-1,80" TARGET="action76"
+   TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#NavigateWishList" NAME="action109"
+  PATH="/NavigateWishList" SHAPE="32,241,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowWishLists" NAME="forward0"
+   PATH="/CatalogShowGiftRegistriesPage.do" SHAPE="-1,16"
+   TARGET="action179" TITLE="ShowWishLists" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowWishListItems" NAME="action110"
+  PATH="/ShowWishListItems" SHAPE="304,4753,0,0"
+  TITLE="EditWishListForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowWishListItems" NAME="forward1"
+   PATH="/CatalogShowWishListItemsPage.do" SHAPE="-1,16"
+   TARGET="action71" TITLE="ShowWishListItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowGiftRegistryItems" NAME="forward2"
+   PATH="/CatalogShowGiftRegistryItemsPage.do" SHAPE="-1,24"
+   TARGET="action39" TITLE="ShowGiftRegistryItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogAfterLoginPage" NAME="action111"
+  PATH="/CatalogAfterLoginPage" SHAPE="1392,2049,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action111" PATH="catalog.afterlogin.page"
+   SHAPE="-1,16" TARGET="page29" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutPaymentSubmit" NAME="action112"
+  PATH="/CheckoutPaymentSubmit" SHAPE="32,2273,0,0" TITLE="CheckoutForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutConfirmation" NAME="forward1"
+   PATH="/CheckoutConfirmation.do" SHAPE="-1,24" TARGET="action145"
+   TITLE="CheckoutConfirmation" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward2"
+   PATH="/CheckoutDelivery.do" SHAPE="-1,80" TARGET="action76"
+   TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowRewardPoints" NAME="action113"
+  PATH="/ShowRewardPoints" SHAPE="304,4289,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowRewardPoints" NAME="forward1"
+   PATH="/CatalogShowRewardPointsPage.do" SHAPE="-1,64"
+   TARGET="action98" TITLE="ShowRewardPoints" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowReviewsPage" NAME="action114"
+  PATH="/CatalogShowReviewsPage" SHAPE="576,4129,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action114" PATH="catalog.showreviews.page"
+   SHAPE="-1,16" TARGET="page30" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AddressBook" NAME="action115" PATH="/AddressBook"
+  SHAPE="576,6321,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="AddressBook" NAME="forward1"
+   PATH="/CatalogAddressBookPage.do" SHAPE="-1,16" TARGET="action186"
+   TITLE="AddressBook" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditCustomer" NAME="action116" PATH="/EditCustomer"
+  SHAPE="304,2289,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditCustomerPage" NAME="forward1"
+   PATH="/CatalogEditCustomerPage.do" SHAPE="-1,56" TARGET="action172"
+   TITLE="EditCustomerPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#NavigateProd" NAME="action117" PATH="/NavigateProd"
+  SHAPE="304,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProducts" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AddToCartSubmit" NAME="action118"
+  PATH="/AddToCartSubmit" SHAPE="32,1441,0,0" TITLE="AddToCartForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowCart" NAME="forward1"
+   PATH="/ShowCartItems.do" SHAPE="-1,64" TARGET="action188"
+   TITLE="ShowCart" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowWishListItems" NAME="forward2"
+   PATH="/ShowWishListItems.do" SHAPE="-1,72" TARGET="action110"
+   TITLE="ShowWishListItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowCopyrightRegistration" NAME="forward3"
+   PATH="/CopyRightRegistration.do" TARGET="action212"
+   TITLE="ShowCopyrightRegistration" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#Exception" NAME="action119" PATH="/Exception"
+  SHAPE="240,33,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action119" PATH="exception.summary.page"
+   SHAPE="-1,16" TARGET="page31" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogChangeGiftRegistryAddrPage" NAME="action120"
+  PATH="/CatalogChangeGiftRegistryAddrPage" SHAPE="304,4145,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action120"
+   PATH="catalog.change.gift.registry.addr.page" SHAPE="-1,80"
+   TARGET="page32" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutServerPaymentSubmit" NAME="action121"
+  PATH="/CheckoutServerPaymentSubmit" SHAPE="32,4913,0,0"
+  TITLE="CreditCardForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="usaepay" NAME="forward0" PATH="/USAePay.do"
+   SHAPE="-1,24" TARGET="action56" TITLE="usaepay" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="bluepay" NAME="forward1" PATH="/BluePay.do"
+   TARGET="action3" TITLE="bluepay" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CyberSourceHOP" NAME="forward2"
+   PATH="/CyberSourceHOP.do" SHAPE="-1,16" TARGET="action210"
+   TITLE="CyberSourceHOP" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="PayflowPro" NAME="forward3"
+   PATH="/PayflowPro.do" SHAPE="-1,56" TARGET="action157"
+   TITLE="PayflowPro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Netpayintl" NAME="forward4"
+   PATH="/Netpayintl.do" SHAPE="-1,64" TARGET="action83"
+   TITLE="Netpayintl" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="eway_au" NAME="forward5" PATH="/Eway_au.do"
+   SHAPE="-1,88" TARGET="action146" TITLE="eway_au" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="payjunction" NAME="forward6"
+   PATH="/PayJunction.do" SHAPE="-1,72" TARGET="action46"
+   TITLE="payjunction" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="elink" NAME="forward7" PATH="/Elink.do"
+   SHAPE="-1,32" TARGET="action5" TITLE="elink" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="BarclaycardSmartPayApi" NAME="forward8"
+   PATH="/BarclaycardSmartPayApi.do" SHAPE="-1,88" TARGET="action45"
+   TITLE="BarclaycardSmartPayApi" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="caledon" NAME="forward9" PATH="/Caledon.do"
+   SHAPE="-1,48" TARGET="action163" TITLE="caledon" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="authorizenet" NAME="forward10"
+   PATH="/AuthorizeNet.do" SHAPE="-1,40" TARGET="action32"
+   TITLE="authorizenet" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CyberSource" NAME="forward11"
+   PATH="/CyberSource.do" SHAPE="-1,80" TARGET="action199"
+   TITLE="CyberSource" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="yourpay" NAME="forward12" PATH="/YourPay.do"
+   SHAPE="-1,80" TARGET="action162" TITLE="yourpay" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ConditionsOfUse" NAME="action122"
+  PATH="/ConditionsOfUse" SHAPE="32,10449,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ConditionsOfUse" NAME="forward0"
+   PATH="/CatalogConditionsOfUsePage.do" SHAPE="-1,16"
+   TARGET="action102" TITLE="ConditionsOfUse" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutFinished" NAME="action123"
+  PATH="/CheckoutFinished" SHAPE="576,5409,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutFinished" NAME="forward1"
+   PATH="/CatalogCheckoutFinishedPage.do" SHAPE="-1,16"
+   TARGET="action99" TITLE="CheckoutFinished" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CyberSourceHOPResponse" NAME="action124"
+  PATH="/CyberSourceHOPResponse" SHAPE="304,6337,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutError" NAME="forward1"
+   PATH="/CheckoutPaymentError.do" SHAPE="-1,72" TARGET="action196"
+   TITLE="CheckoutError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditAddrSubmit" NAME="action125"
+  PATH="/EditAddrSubmit" SHAPE="32,6321,0,0"
+  TITLE="RegisterCustomerForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ApplicationError" NAME="forward1"
+   PATH="/EditAddr.do" SHAPE="-1,56" TARGET="action129"
+   TITLE="ApplicationError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="AddressBook" NAME="forward2"
+   PATH="/AddressBook.do" SHAPE="-1,32" TARGET="action115"
+   TITLE="AddressBook" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogDeleteAddrPage" NAME="action126"
+  PATH="/CatalogDeleteAddrPage" SHAPE="576,9153,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action126" PATH="catalog.deleteaddr.page"
+   SHAPE="-1,16" TARGET="page33" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#FilterProd" NAME="action127" PATH="/FilterProd"
+  SHAPE="304,257,0,0" TITLE="FilterByManufacturerForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProducts" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ContactUs" NAME="action128" PATH="/ContactUs"
+  SHAPE="32,10337,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ContactUs" NAME="forward0"
+   PATH="/CatalogContactUsPage.do" SHAPE="-1,16" TARGET="action91"
+   TITLE="ContactUs" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditAddr" NAME="action129" PATH="/EditAddr"
+  SHAPE="304,9025,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditAddrPage" NAME="forward1"
+   PATH="/CatalogEditAddrPage.do" SHAPE="-1,16" TARGET="action137"
+   TITLE="EditAddrPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowOrderDetailsPage" NAME="action130"
+  PATH="/CatalogShowOrderDetailsPage" SHAPE="576,4417,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action130"
+   PATH="catalog.showorder.details.page" SHAPE="-1,16" TARGET="page34"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutConfirmationSubmit" NAME="action131"
+  PATH="/CheckoutConfirmationSubmit" SHAPE="32,3153,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutServerPayment" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="CheckoutServerPayment" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutFinished" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="CheckoutFinished" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutExternalPayment" NAME="forward3"
+   PATH="/CatalogCheckoutExternalPaymentPage.do" SHAPE="-1,64"
+   TARGET="action143" TITLE="CheckoutExternalPayment" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowCartItems" NAME="forward4"
+   PATH="/ShowCartItems.do" SHAPE="-1,64" TARGET="action188"
+   TITLE="ShowCartItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="WorldPayXMLRedirect" NAME="forward5"
+   PATH="/WorldPayXMLRedirect.do" SHAPE="-1,80" TARGET="action103"
+   TITLE="WorldPayXMLRedirect" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutExternalPaymentFrame" NAME="forward6"
+   PATH="/CatalogCheckoutExternalPaymentFramePage.do" SHAPE="-1,16"
+   TARGET="action139" TITLE="CheckoutExternalPaymentFrame"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward7"
+   PATH="/CheckoutDelivery.do" SHAPE="-1,80" TARGET="action76"
+   TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CommideaVanguard" NAME="forward8"
+   PATH="/CommideaVanguard.do" SHAPE="-1,64" TARGET="action52"
+   TITLE="CommideaVanguard" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ChronoPayCallback" NAME="action132"
+  PATH="/ChronoPayCallback" SHAPE="864,10897,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#CatalogShowProdDetailsPage" NAME="action133"
+  PATH="/CatalogShowProdDetailsPage" SHAPE="848,529,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action133"
+   PATH="catalog.showprod.details.page" SHAPE="-1,16" TARGET="page35"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#DeleteGiftRegistry" NAME="action134"
+  PATH="/DeleteGiftRegistry" SHAPE="304,3825,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SetLocale_es_ES" NAME="action135"
+  PATH="/SetLocale_es_ES" SHAPE="1120,2625,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="SetLocale" NAME="forward0"
+   PATH="/CatalogMainPage.do" SHAPE="-1,88" TARGET="action20"
+   TITLE="SetLocale" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowMergeInfoPage" NAME="action136"
+  PATH="/CatalogShowMergeInfoPage" SHAPE="32,10561,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action136"
+   PATH="catalog.showmergeinfo.page" SHAPE="-1,16" TARGET="page36"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogEditAddrPage" NAME="action137"
+  PATH="/CatalogEditAddrPage" SHAPE="576,9009,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action137" PATH="catalog.editaddr.page"
+   SHAPE="-1,16" TARGET="page37" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#NavigateGiftRegistryItems" NAME="action138"
+  PATH="/NavigateGiftRegistryItems" SHAPE="32,241,0,0"
+  TITLE="EditWishListForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowGiftRegistryItems" NAME="forward0"
+   PATH="/CatalogShowGiftRegistryItemsNoEditPage.do" TARGET="action159"
+   TITLE="ShowGiftRegistryItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutExternalPaymentFramePage"
+  NAME="action139" PATH="/CatalogCheckoutExternalPaymentFramePage"
+  SHAPE="304,3169,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action139"
+   PATH="catalog.external.payment.frame.page" SHAPE="-1,32"
+   TARGET="page38" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCreateGiftRegistryPage" NAME="action140"
+  PATH="/CatalogCreateGiftRegistryPage" SHAPE="576,1265,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action140"
+   PATH="catalog.create.gift.registry.page" SHAPE="-1,16"
+   TARGET="page39" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ChangeGiftRegistryAddrSubmit" NAME="action141"
+  PATH="/ChangeGiftRegistryAddrSubmit" SHAPE="32,2977,0,0"
+  TITLE="ChangeAddrForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="EditGiftRegistryPage" NAME="forward1"
+   PATH="/EditGiftRegistry.do" SHAPE="-1,16" TARGET="action63"
+   TITLE="EditGiftRegistryPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#PreSelectProd" NAME="action142"
+  PATH="/PreSelectProd" SHAPE="304,529,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="SelectProd" NAME="forward0"
+   PATH="/SelectProd.do" TARGET="action30" TITLE="SelectProd"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutExternalPaymentPage" NAME="action143"
+  PATH="/CatalogCheckoutExternalPaymentPage" SHAPE="576,7281,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action143"
+   PATH="catalog.external.payment.page" SHAPE="-1,16" TARGET="page40"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#BarclaycardSmartPayHostedNotification"
+  NAME="action144" PATH="/BarclaycardSmartPayHostedNotification"
+  SHAPE="1072,10913,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#CheckoutConfirmation" NAME="action145"
+  PATH="/CheckoutConfirmation" SHAPE="304,2049,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutConfirmation" NAME="forward1"
+   PATH="/CatalogCheckoutConfirmationPage.do" SHAPE="-1,16"
+   TARGET="action195" TITLE="CheckoutConfirmation" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward2"
+   PATH="/CheckoutDelivery.do" SHAPE="-1,80" TARGET="action76"
+   TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#Eway_au" NAME="action146" PATH="/Eway_au"
+  SHAPE="304,8001,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#DigitalDownload" NAME="action147"
+  PATH="/DigitalDownload" SHAPE="304,4001,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#Default" NAME="action148" PATH="/Default"
+  SHAPE="32,241,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="SelectProd" NAME="forward0"
+   PATH="/SelectProd.do" TARGET="action30" TITLE="SelectProd"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowSearchByManufacturerResults"
+   NAME="forward1" PATH="/ShowSearchByManufacturerResults.do"
+   TARGET="action16" TITLE="ShowSearchByManufacturerResults"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="SelectCat" NAME="forward2"
+   PATH="/SelectCat.do" TARGET="action85" TITLE="SelectCat"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowSearchByManufacturerResultsByLink"
+   NAME="forward3" PATH="/ShowSearchByManufacturerResultsByLink.do"
+   TARGET="action0" TITLE="ShowSearchByManufacturerResultsByLink"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowProductsForManufacturer" NAME="forward4"
+   PATH="/ShowProductsForManufacturer.do" TARGET="action21"
+   TITLE="ShowProductsForManufacturer" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward5" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CyberSourceResponse" NAME="action149"
+  PATH="/CyberSourceResponse" SHAPE="304,8177,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#DownloadInvoice" NAME="action150"
+  PATH="/DownloadInvoice" SHAPE="304,4145,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CommideaVanguard1" NAME="action151"
+  PATH="/CommideaVanguard1" SHAPE="32,5937,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutError" NAME="forward1"
+   PATH="/CheckoutPaymentError.do" SHAPE="-1,72" TARGET="action196"
+   TITLE="CheckoutError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="3DSecure" NAME="forward3"
+   PATH="/CommideaVanguard3DSecure.do" SHAPE="-1,40" TARGET="action107"
+   TITLE="3DSecure" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CreditCard" NAME="forward4"
+   PATH="/CommideaVanguardPayment.do" SHAPE="-1,40" TARGET="action27"
+   TITLE="CreditCard" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CommideaVanguard2" NAME="action152"
+  PATH="/CommideaVanguard2" SHAPE="304,6769,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward1"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutError" NAME="forward2"
+   PATH="/CheckoutPaymentError.do" SHAPE="-1,72" TARGET="action196"
+   TITLE="CheckoutError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SetLocale_en_GB" NAME="action153"
+  PATH="/SetLocale_en_GB" SHAPE="1120,2801,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="SetLocale" NAME="forward0"
+   PATH="/CatalogMainPage.do" SHAPE="-1,88" TARGET="action20"
+   TITLE="SetLocale" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#InitFromToken" NAME="action154"
+  PATH="/InitFromToken" SHAPE="304,1633,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="CheckoutDelivery" NAME="forward0"
+   PATH="/CheckoutDelivery.do" SHAPE="-1,80" TARGET="action76"
+   TITLE="CheckoutDelivery" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#EditNotifiedProductsSubmit" NAME="action155"
+  PATH="/EditNotifiedProductsSubmit" SHAPE="304,4289,0,0"
+  TITLE="EditNotifiedProductForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogChangeDeliveryAddrPage" NAME="action156"
+  PATH="/CatalogChangeDeliveryAddrPage" SHAPE="304,4001,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action156"
+   PATH="catalog.changedeliveryaddr.page" SHAPE="-1,80" TARGET="page41"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#PayflowPro" NAME="action157" PATH="/PayflowPro"
+  SHAPE="304,8353,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogOnePageCheckoutPage" NAME="action158"
+  PATH="/CatalogOnePageCheckoutPage" SHAPE="848,2465,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action158"
+   PATH="catalog.onepagecheckout.page" SHAPE="-1,16" TARGET="page42"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowGiftRegistryItemsNoEditPage"
+  NAME="action159" PATH="/CatalogShowGiftRegistryItemsNoEditPage"
+  SHAPE="304,257,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action159"
+   PATH="catalog.showgiftregistryitems.noedit.page" TARGET="page43"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#FilterProdByCategory" NAME="action160"
+  PATH="/FilterProdByCategory" SHAPE="304,257,0,0"
+  TITLE="FilterByCategoryForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowProducts" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowProducts" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CustomerRegistrationSubmit" NAME="action161"
+  PATH="/CustomerRegistrationSubmit" SHAPE="32,2449,0,0"
+  TITLE="RegisterCustomerForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="CustomerRegistrationSubmit" NAME="forward0"
+   PATH="/CatalogAccountCreatedPage.do" SHAPE="-1,16" TARGET="action180"
+   TITLE="CustomerRegistrationSubmit" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ApplicationError" NAME="forward1"
+   PATH="/CustomerRegistration.do" SHAPE="-1,24" TARGET="action205"
+   TITLE="ApplicationError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="LoginSubmit" NAME="forward2"
+   PATH="/CatalogAfterLogin.do" SHAPE="-1,56" TARGET="action97"
+   TITLE="LoginSubmit" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#YourPay" NAME="action162" PATH="/YourPay"
+  SHAPE="304,8529,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#Caledon" NAME="action163" PATH="/Caledon"
+  SHAPE="304,8705,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="TryAgain" NAME="forward1"
+   PATH="/CheckoutServerPayment.do" SHAPE="-1,72" TARGET="action170"
+   TITLE="TryAgain" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ChangePassword" NAME="action164"
+  PATH="/ChangePassword" SHAPE="304,1281,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ChangePasswordPage" NAME="forward1"
+   PATH="/CatalogChangePasswordPage.do" TARGET="action15"
+   TITLE="ChangePasswordPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowOrderDetails" NAME="action165"
+  PATH="/ShowOrderDetails" SHAPE="304,4433,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowOrderDetails" NAME="forward1"
+   PATH="/CatalogShowOrderDetailsPage.do" SHAPE="-1,16"
+   TARGET="action130" TITLE="ShowOrderDetails" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward2"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#GiftRegistrySearch" NAME="action166"
+  PATH="/GiftRegistrySearch" SHAPE="32,9777,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="GiftRegistrySearch" NAME="forward0"
+   PATH="/CatalogGiftRegistrySearchPage.do" SHAPE="-1,16"
+   TARGET="action47" TITLE="GiftRegistrySearch" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#LanguageMenu" NAME="action167" PATH="/LanguageMenu"
+  SHAPE="32,10673,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action167" PATH="language.menu.page"
+   SHAPE="-1,16" TARGET="page44" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogPrivacyNoticePage" NAME="action168"
+  PATH="/CatalogPrivacyNoticePage" SHAPE="240,9681,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action168"
+   PATH="catalog.privacynotice.page" SHAPE="-1,16" TARGET="page45"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogEditNewsletterPage" NAME="action169"
+  PATH="/CatalogEditNewsletterPage" SHAPE="576,1265,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action169"
+   PATH="catalog.editnewsletter.page" SHAPE="-1,80" TARGET="page46"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutServerPayment" NAME="action170"
+  PATH="/CheckoutServerPayment" SHAPE="576,3521,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="CollectCreditCardDetails" NAME="forward0"
+   PATH="/CatalogCheckoutCreditCardPage.do" SHAPE="-1,16"
+   TARGET="action191" TITLE="CollectCreditCardDetails" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutPunchoutPage" NAME="action171"
+  PATH="/CatalogCheckoutPunchoutPage" SHAPE="1120,1617,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action171" PATH="catalog.punchout.page"
+   SHAPE="-1,16" TARGET="page47" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogEditCustomerPage" NAME="action172"
+  PATH="/CatalogEditCustomerPage" SHAPE="576,3153,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action172" PATH="catalog.editcustomer.page"
+   SHAPE="-1,16" TARGET="page48" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AdvancedSearch" NAME="action173"
+  PATH="/AdvancedSearch" SHAPE="32,9553,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="AdvancedSearch" NAME="forward0"
+   PATH="/CatalogAdvancedSearchPage.do" SHAPE="-1,16" TARGET="action12"
+   TITLE="AdvancedSearch" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowAllReviewsPage" NAME="action174"
+  PATH="/CatalogShowAllReviewsPage" SHAPE="304,257,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action174"
+   PATH="catalog.showallreviews.page" TARGET="page49" TITLE="forward"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AddToCartFromProdId" NAME="action175"
+  PATH="/AddToCartFromProdId" SHAPE="576,513,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowCart" NAME="forward1"
+   PATH="/ShowCartItems.do" SHAPE="-1,64" TARGET="action188"
+   TITLE="ShowCart" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowProductDetails" NAME="forward2"
+   PATH="/CatalogShowProdDetailsPage.do" SHAPE="-1,88"
+   TARGET="action133" TITLE="ShowProductDetails" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward3" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowCopyrightRegistration" NAME="forward4"
+   PATH="/CopyRightRegistration.do" TARGET="action212"
+   TITLE="ShowCopyrightRegistration" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#WorldPayXMLRedirectResponse" NAME="action176"
+  PATH="/WorldPayXMLRedirectResponse" SHAPE="304,6945,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutError" NAME="forward1"
+   PATH="/CheckoutPaymentError.do" SHAPE="-1,72" TARGET="action196"
+   TITLE="CheckoutError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CreateGiftRegistry" NAME="action177"
+  PATH="/CreateGiftRegistry" SHAPE="304,1281,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CreateGiftRegistryPage" NAME="forward1"
+   PATH="/CatalogCreateGiftRegistryPage.do" TARGET="action140"
+   TITLE="CreateGiftRegistryPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ManagePreferencesSubmit" NAME="action178"
+  PATH="/ManagePreferencesSubmit" SHAPE="32,2625,0,0"
+  TITLE="PreferencesForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/MyAccount.do" SHAPE="-1,88" TARGET="action208"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Error" NAME="forward2"
+   PATH="/ManagePreferences.do" SHAPE="-1,80" TARGET="action54"
+   TITLE="Error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowGiftRegistriesPage" NAME="action179"
+  PATH="/CatalogShowGiftRegistriesPage" SHAPE="304,257,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action179"
+   PATH="catalog.showgiftregistries.page" SHAPE="-1,16" TARGET="page50"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogAccountCreatedPage" NAME="action180"
+  PATH="/CatalogAccountCreatedPage" SHAPE="304,2465,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action180"
+   PATH="catalog.accountcreated.page" SHAPE="-1,16" TARGET="page51"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#BarclaycardSmartPayHostedResponse" NAME="action181"
+  PATH="/BarclaycardSmartPayHostedResponse" SHAPE="304,7121,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="CheckoutError" NAME="forward1"
+   PATH="/CheckoutPaymentError.do" SHAPE="-1,72" TARGET="action196"
+   TITLE="CheckoutError" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Approved" NAME="forward2"
+   PATH="/CheckoutFinished.do" SHAPE="-1,56" TARGET="action123"
+   TITLE="Approved" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#PunchoutCheckout" NAME="action182"
+  PATH="/PunchoutCheckout" SHAPE="848,1633,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Punchout" NAME="forward0"
+   PATH="/CatalogCheckoutPunchoutPage.do" SHAPE="-1,16"
+   TARGET="action171" TITLE="Punchout" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogLogInPage" NAME="action183"
+  PATH="/CatalogLogInPage" SHAPE="1120,1265,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action183" PATH="catalog.login.page"
+   SHAPE="-1,16" TARGET="page52" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogEditGiftRegistryPage" NAME="action184"
+  PATH="/CatalogEditGiftRegistryPage" SHAPE="576,2977,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action184"
+   PATH="catalog.edit.gift.registry.page" SHAPE="-1,16" TARGET="page53"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogChangePaymentAddrPage" NAME="action185"
+  PATH="/CatalogChangePaymentAddrPage" SHAPE="304,4289,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action185"
+   PATH="catalog.changepaymentaddr.page" SHAPE="-1,80" TARGET="page54"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogAddressBookPage" NAME="action186"
+  PATH="/CatalogAddressBookPage" SHAPE="848,6337,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action186" PATH="catalog.addressbook.page"
+   SHAPE="-1,16" TARGET="page55" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowHomepagePage" NAME="action187"
+  PATH="/CatalogShowHomepagePage" SHAPE="240,9457,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action187" PATH="catalog.showhomepage.page"
+   SHAPE="-1,16" TARGET="page56" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowCartItems" NAME="action188"
+  PATH="/ShowCartItems" SHAPE="848,2049,0,0" TITLE="EditCartForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowCart" NAME="forward0"
+   PATH="/CatalogShowCartItemsPage.do" SHAPE="-1,24" TARGET="action92"
+   TITLE="ShowCart" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#Unavailable" NAME="action189" PATH="/Unavailable"
+  SHAPE="240,145,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action189" PATH="unavailable.page"
+   SHAPE="-1,16" TARGET="page57" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#DeleteAddr" NAME="action190" PATH="/DeleteAddr"
+  SHAPE="304,9169,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="DeleteAddrPage" NAME="forward1"
+   PATH="/CatalogDeleteAddrPage.do" SHAPE="-1,16" TARGET="action126"
+   TITLE="DeleteAddrPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="AddressBook" NAME="forward2"
+   PATH="/AddressBook.do" SHAPE="-1,32" TARGET="action115"
+   TITLE="AddressBook" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutCreditCardPage" NAME="action191"
+  PATH="/CatalogCheckoutCreditCardPage" SHAPE="848,3537,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action191"
+   PATH="catalog.checkoutcreditcard.page" SHAPE="-1,16" TARGET="page58"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ResetNotification" NAME="action192"
+  PATH="/ResetNotification" SHAPE="576,3809,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowProductDetails" NAME="forward1"
+   PATH="/CatalogShowProdDetailsPage.do" SHAPE="-1,88"
+   TARGET="action133" TITLE="ShowProductDetails" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowGiftRegistryItems" NAME="action193"
+  PATH="/ShowGiftRegistryItems" SHAPE="32,241,0,0"
+  TITLE="EditWishListForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowGiftRegistryItems" NAME="forward0"
+   PATH="/CatalogShowGiftRegistryItemsNoEditPage.do" TARGET="action159"
+   TITLE="ShowGiftRegistryItems" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="Welcome" NAME="forward1" PATH="/Welcome.do"
+   SHAPE="-1,88" TARGET="action31" TITLE="Welcome" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SetNotification" NAME="action194"
+  PATH="/SetNotification" SHAPE="576,3985,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowProductDetails" NAME="forward1"
+   PATH="/CatalogShowProdDetailsPage.do" SHAPE="-1,88"
+   TARGET="action133" TITLE="ShowProductDetails" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogCheckoutConfirmationPage" NAME="action195"
+  PATH="/CatalogCheckoutConfirmationPage" SHAPE="576,2033,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action195"
+   PATH="catalog.checkoutconfirmation.page" SHAPE="-1,24"
+   TARGET="page59" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CheckoutPaymentError" NAME="action196"
+  PATH="/CheckoutPaymentError" SHAPE="576,5937,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowErrorPage" NAME="forward0"
+   PATH="/CatalogCheckoutExternalPaymentErrorPage.do" SHAPE="-1,16"
+   TARGET="action64" TITLE="ShowErrorPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowSearchResults" NAME="action197"
+  PATH="/ShowSearchResults" SHAPE="304,257,0,0"
+  TITLE="SearchProductForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="AdvancedSearchSubmit" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="AdvancedSearchSubmit" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogShowImagePage" NAME="action198"
+  PATH="/CatalogShowImagePage" SHAPE="304,4433,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action198" PATH="catalog.showimage.page"
+   SHAPE="-1,80" TARGET="page60" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CyberSource" NAME="action199" PATH="/CyberSource"
+  SHAPE="304,7505,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="PostToGateway" NAME="forward1"
+   PATH="/CatalogCheckoutExternalPaymentPage.do" SHAPE="-1,64"
+   TARGET="action143" TITLE="PostToGateway" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SetLocale_de_DE" NAME="action200"
+  PATH="/SetLocale_de_DE" SHAPE="1120,2977,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="SetLocale" NAME="forward0"
+   PATH="/CatalogMainPage.do" SHAPE="-1,88" TARGET="action20"
+   TITLE="SetLocale" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#XMLOverHTTP" NAME="action201" PATH="/XMLOverHTTP"
+  SHAPE="32,10785,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="SendResponse" NAME="forward0"
+   PATH="/WEB-INF/jsp/XMLOverHTTPResponse.jsp" SHAPE="-1,16"
+   TARGET="page61" TITLE="SendResponse" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ShowAllNewProds" NAME="action202"
+  PATH="/ShowAllNewProds" SHAPE="304,257,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="ShowAllNewProds" NAME="forward0"
+   PATH="/CatalogShowProdsPage.do" TARGET="action84"
+   TITLE="ShowAllNewProds" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogRegisterCustomerPage" NAME="action203"
+  PATH="/CatalogRegisterCustomerPage" SHAPE="576,2625,0,0"
+  SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action203"
+   PATH="catalog.registercustomer.page" SHAPE="-1,16" TARGET="page62"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CatalogLogOutPage" NAME="action204"
+  PATH="/CatalogLogOutPage" SHAPE="240,10017,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action204" PATH="catalog.logout.page"
+   SHAPE="-1,16" TARGET="page63" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#CustomerRegistration" NAME="action205"
+  PATH="/CustomerRegistration" SHAPE="304,2641,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="CustomerRegistrationPage" NAME="forward0"
+   PATH="/CatalogRegisterCustomerPage.do" SHAPE="-1,16"
+   TARGET="action203" TITLE="CustomerRegistrationPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#MoneyBookersCallback" NAME="action206"
+  PATH="/MoneyBookersCallback" SHAPE="32,11009,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#EditWishListSubmit" NAME="action207"
+  PATH="/EditWishListSubmit" SHAPE="32,4737,0,0"
+  TITLE="EditWishListForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ShowWishList" NAME="forward1"
+   PATH="/ShowWishListItems.do" SHAPE="-1,72" TARGET="action110"
+   TITLE="ShowWishList" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#MyAccount" NAME="action208" PATH="/MyAccount"
+  SHAPE="576,2801,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="MyAccount" NAME="forward1"
+   PATH="/CatalogAfterLogin.do" SHAPE="-1,56" TARGET="action97"
+   TITLE="MyAccount" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#ChangePaymentAddr" NAME="action209"
+  PATH="/ChangePaymentAddr" SHAPE="32,4273,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="Login" NAME="forward0" PATH="/LogIn.do"
+   TARGET="action11" TITLE="Login" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="ChangePaymentAddrPage" NAME="forward1"
+   PATH="/CatalogChangePaymentAddrPage.do" SHAPE="-1,16"
+   TARGET="action185" TITLE="ChangePaymentAddrPage" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page0" PATH="about.menu.page" SHAPE="240,9346,0,0"
+  SUBTYPE="tile" TITLE="about.menu.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page1" PATH="catalog.newaddr.page"
+  SHAPE="848,5778,0,0" SUBTYPE="tile" TITLE="catalog.newaddr.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page2" PATH="catalog.advancedsearch.page"
+  SHAPE="448,9554,0,0" SUBTYPE="tile"
+  TITLE="catalog.advancedsearch.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page3" PATH="catalog.changepassword.page"
+  SHAPE="848,1282,0,0" SUBTYPE="tile"
+  TITLE="catalog.changepassword.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page4" PATH="catalog.main.page"
+  SHAPE="1600,242,0,0" SUBTYPE="tile" TITLE="catalog.main.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page5" PATH="catalog.writereview.page"
+  SHAPE="848,3826,0,0" SUBTYPE="tile" TITLE="catalog.writereview.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page6" PATH="catalog.commideacreditcard.page"
+  SHAPE="848,6194,0,0" SUBTYPE="tile"
+  TITLE="catalog.commideacreditcard.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page7" PATH="catalog.checkoutpayment.page"
+  SHAPE="848,1874,0,0" SUBTYPE="tile"
+  TITLE="catalog.checkoutpayment.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page8" PATH="catalog.showgiftregistryitems.page"
+  SHAPE="848,4930,0,0" SUBTYPE="tile"
+  TITLE="catalog.showgiftregistryitems.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page9" PATH="catalog.showcats.page"
+  SHAPE="848,258,0,0" SUBTYPE="tile" TITLE="catalog.showcats.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page10" PATH="catalog.gift.registry.search.page"
+  SHAPE="448,9778,0,0" SUBTYPE="tile"
+  TITLE="catalog.gift.registry.search.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page11" PATH="catalog.shippingandreturns.page"
+  SHAPE="448,9890,0,0" SUBTYPE="tile"
+  TITLE="catalog.shippingandreturns.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page12" PATH="catalog.forgotpassword.page"
+  SHAPE="848,5602,0,0" SUBTYPE="tile"
+  TITLE="catalog.forgotpassword.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page13" PATH="catalog.external.payment.error.page"
+  SHAPE="1120,5938,0,0" SUBTYPE="tile"
+  TITLE="catalog.external.payment.error.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page14"
+  PATH="catalog.external.payment.from.frame.page" SHAPE="240,10130,0,0"
+  SUBTYPE="tile" TITLE="catalog.external.payment.from.frame.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page15" PATH="catalog.manage.preferences.page"
+  SHAPE="848,4610,0,0" SUBTYPE="tile"
+  TITLE="catalog.manage.preferences.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page16" PATH="catalog.showwishlistitems.page"
+  SHAPE="848,4754,0,0" SUBTYPE="tile"
+  TITLE="catalog.showwishlistitems.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page17" PATH="catalog.checkoutdelivery.page"
+  SHAPE="1120,1442,0,0" SUBTYPE="tile"
+  TITLE="catalog.checkoutdelivery.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page18" PATH="catalog.aboutus.page"
+  SHAPE="448,10226,0,0" SUBTYPE="tile" TITLE="catalog.aboutus.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page19" PATH="catalog.showreview.details.page"
+  SHAPE="576,242,0,0" SUBTYPE="tile"
+  TITLE="catalog.showreview.details.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page20" PATH="catalog.showallorders.page"
+  SHAPE="848,3682,0,0" SUBTYPE="tile" TITLE="catalog.showallorders.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page21" PATH="catalog.showprods.page"
+  SHAPE="848,258,0,0" SUBTYPE="tile" TITLE="catalog.showprods.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page22" PATH="catalog.EditNotifiedProducts.page"
+  SHAPE="848,4002,0,0" SUBTYPE="tile"
+  TITLE="catalog.EditNotifiedProducts.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page23" PATH="catalog.contactus.page"
+  SHAPE="448,10338,0,0" SUBTYPE="tile" TITLE="catalog.contactus.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page24" PATH="catalog.showcartitems.page"
+  SHAPE="1392,2290,0,0" SUBTYPE="tile"
+  TITLE="catalog.showcartitems.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page25" PATH="catalog.showrewardpoints.page"
+  SHAPE="848,4290,0,0" SUBTYPE="tile"
+  TITLE="catalog.showrewardpoints.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page26" PATH="catalog.checkoutfinished.page"
+  SHAPE="1120,5410,0,0" SUBTYPE="tile"
+  TITLE="catalog.checkoutfinished.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page27" PATH="catalog.conditionsofuse.page"
+  SHAPE="448,10450,0,0" SUBTYPE="tile"
+  TITLE="catalog.conditionsofuse.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page28" PATH="catalog.commidea3dsecurecheck.page"
+  SHAPE="576,6498,0,0" SUBTYPE="tile"
+  TITLE="catalog.commidea3dsecurecheck.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page29" PATH="catalog.afterlogin.page"
+  SHAPE="1600,2034,0,0" SUBTYPE="tile" TITLE="catalog.afterlogin.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page30" PATH="catalog.showreviews.page"
+  SHAPE="848,4146,0,0" SUBTYPE="tile" TITLE="catalog.showreviews.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page31" PATH="exception.summary.page"
+  SHAPE="448,18,0,0" SUBTYPE="tile" TITLE="exception.summary.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page32"
+  PATH="catalog.change.gift.registry.addr.page" SHAPE="576,6754,0,0"
+  SUBTYPE="tile" TITLE="catalog.change.gift.registry.addr.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#CyberSourceHOP" NAME="action210"
+  PATH="/CyberSourceHOP" SHAPE="304,4929,0,0" SUBTYPE="unknown"
+  TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page33" PATH="catalog.deleteaddr.page"
+  SHAPE="848,9170,0,0" SUBTYPE="tile" TITLE="catalog.deleteaddr.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page34" PATH="catalog.showorder.details.page"
+  SHAPE="848,4434,0,0" SUBTYPE="tile"
+  TITLE="catalog.showorder.details.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page35" PATH="catalog.showprod.details.page"
+  SHAPE="1120,514,0,0" SUBTYPE="tile"
+  TITLE="catalog.showprod.details.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page36" PATH="catalog.showmergeinfo.page"
+  SHAPE="240,10578,0,0" SUBTYPE="tile"
+  TITLE="catalog.showmergeinfo.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page37" PATH="catalog.editaddr.page"
+  SHAPE="848,9026,0,0" SUBTYPE="tile" TITLE="catalog.editaddr.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page38" PATH="catalog.external.payment.frame.page"
+  SHAPE="576,3666,0,0" SUBTYPE="tile"
+  TITLE="catalog.external.payment.frame.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page39" PATH="catalog.create.gift.registry.page"
+  SHAPE="848,1282,0,0" SUBTYPE="tile"
+  TITLE="catalog.create.gift.registry.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page40" PATH="catalog.external.payment.page"
+  SHAPE="848,7298,0,0" SUBTYPE="tile"
+  TITLE="catalog.external.payment.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page41" PATH="catalog.changedeliveryaddr.page"
+  SHAPE="576,6610,0,0" SUBTYPE="tile"
+  TITLE="catalog.changedeliveryaddr.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page42" PATH="catalog.onepagecheckout.page"
+  SHAPE="1120,2450,0,0" SUBTYPE="tile"
+  TITLE="catalog.onepagecheckout.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page43"
+  PATH="catalog.showgiftregistryitems.noedit.page" SHAPE="576,242,0,0"
+  SUBTYPE="tile" TITLE="catalog.showgiftregistryitems.noedit.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page44" PATH="language.menu.page"
+  SHAPE="240,10690,0,0" SUBTYPE="tile" TITLE="language.menu.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page45" PATH="catalog.privacynotice.page"
+  SHAPE="448,9666,0,0" SUBTYPE="tile" TITLE="catalog.privacynotice.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page46" PATH="catalog.editnewsletter.page"
+  SHAPE="848,2818,0,0" SUBTYPE="tile"
+  TITLE="catalog.editnewsletter.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page47" PATH="catalog.punchout.page"
+  SHAPE="1392,1634,0,0" SUBTYPE="tile" TITLE="catalog.punchout.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page48" PATH="catalog.editcustomer.page"
+  SHAPE="848,3170,0,0" SUBTYPE="tile" TITLE="catalog.editcustomer.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page49" PATH="catalog.showallreviews.page"
+  SHAPE="576,242,0,0" SUBTYPE="tile" TITLE="catalog.showallreviews.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page50" PATH="catalog.showgiftregistries.page"
+  SHAPE="576,242,0,0" SUBTYPE="tile"
+  TITLE="catalog.showgiftregistries.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page51" PATH="catalog.accountcreated.page"
+  SHAPE="576,2450,0,0" SUBTYPE="tile"
+  TITLE="catalog.accountcreated.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page52" PATH="catalog.login.page"
+  SHAPE="1392,1282,0,0" SUBTYPE="tile" TITLE="catalog.login.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page53" PATH="catalog.edit.gift.registry.page"
+  SHAPE="848,2994,0,0" SUBTYPE="tile"
+  TITLE="catalog.edit.gift.registry.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page54" PATH="catalog.changepaymentaddr.page"
+  SHAPE="576,6930,0,0" SUBTYPE="tile"
+  TITLE="catalog.changepaymentaddr.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page55" PATH="catalog.addressbook.page"
+  SHAPE="1120,6322,0,0" SUBTYPE="tile" TITLE="catalog.addressbook.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page56" PATH="catalog.showhomepage.page"
+  SHAPE="448,9442,0,0" SUBTYPE="tile" TITLE="catalog.showhomepage.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page57" PATH="unavailable.page" SHAPE="448,130,0,0"
+  SUBTYPE="tile" TITLE="unavailable.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page58" PATH="catalog.checkoutcreditcard.page"
+  SHAPE="1120,3522,0,0" SUBTYPE="tile"
+  TITLE="catalog.checkoutcreditcard.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page59" PATH="catalog.checkoutconfirmation.page"
+  SHAPE="848,2290,0,0" SUBTYPE="tile"
+  TITLE="catalog.checkoutconfirmation.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page60" PATH="catalog.showimage.page"
+  SHAPE="576,7106,0,0" SUBTYPE="tile" TITLE="catalog.showimage.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page61" PATH="/WEB-INF/jsp/XMLOverHTTPResponse.jsp"
+  SHAPE="240,10802,0,0" SUBTYPE="jsp" TITLE="XMLOverHTTPResponse.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page62" PATH="catalog.registercustomer.page"
+  SHAPE="848,2642,0,0" SUBTYPE="tile"
+  TITLE="catalog.registercustomer.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page63" PATH="catalog.logout.page"
+  SHAPE="448,10002,0,0" SUBTYPE="tile" TITLE="catalog.logout.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#SiteMap" NAME="action211" PATH="/SiteMap"
+  SHAPE="32,14945,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action211" PATH="catalog.sitemap.page"
+   TARGET="page64" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page64" PATH="catalog.sitemap.page"
+  SHAPE="240,15074,0,0" SUBTYPE="tile" TITLE="catalog.sitemap.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#CopyRightRegistration" NAME="action212"
+  PATH="/CopyRightRegistration" SHAPE="48,96,100,41" SUBTYPE="forward"
+  TITLE="TblTypeofwork" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action212"
+   PATH="catalog.mithcopyright.newpage" TARGET="page77" TITLE="forward"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page65" PATH="catalog.mithcopyright.page"
+  SHAPE="240,34,0,0" SUBTYPE="tile" TITLE="catalog.mithcopyright.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#SelectLink1" NAME="action213" PATH="/SelectLink1"
+  SHAPE="32,17329,0,0" TITLE="TblTypeofwork" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=2" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page66" PATH="catalog.mithcopyright.link2"
+  SHAPE="240,17329,0,0" SUBTYPE="tile"
+  TITLE="catalog.mithcopyright.link2" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page67"
+  PATH="/WEB-INF/jsp/CatalogCopyRightRegistrationBody.jsp"
+  SHAPE="240,17441,0,0" SUBTYPE="jsp"
+  TITLE="CatalogCopyRightRegistrationBody.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#AddNewTitles" NAME="action214" PATH="/AddNewTitles"
+  SHAPE="32,17329,0,0" SUBTYPE="forward" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action214"
+   PATH="catalog.mithcopyright.addtitles.page" TARGET="page68"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page68" PATH="catalog.mithcopyright.addtitles.page"
+  SHAPE="240,17346,0,0" SUBTYPE="tile"
+  TITLE="catalog.mithcopyright.addtitles.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#DoneAddNewTitles" NAME="action215"
+  PATH="/DoneAddNewTitles" SHAPE="32,17329,0,0" TITLE="NewTitleForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=2" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectLink2" NAME="action216" PATH="/SelectLink2"
+  SHAPE="32,17329,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=3" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectLink3" NAME="action217" PATH="/SelectLink3"
+  SHAPE="96,513,0,0" TITLE="PublicationForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=4" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="yes" NAME="forward1"
+   PATH="/AddNewPublicationYes.do" TARGET="action221" TITLE="yes"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="no" NAME="forward2"
+   PATH="/AddNewPublicationNo.do" TARGET="action222" TITLE="no"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AddNewAuthors" NAME="action218"
+  PATH="/AddNewAuthors" SHAPE="32,17329,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action218"
+   PATH="catalog.mithcopyright.addauthors.page" TARGET="page69"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page69"
+  PATH="catalog.mithcopyright.addauthors.page" SHAPE="240,17346,0,0"
+  SUBTYPE="tile" TITLE="catalog.mithcopyright.addauthors.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#DoneAddNewAuthor" NAME="action219"
+  PATH="/DoneAddNewAuthor" SHAPE="96,513,0,0" TITLE="NewAuthorsForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=4" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectLink4" NAME="action220" PATH="/SelectLink4"
+  SHAPE="32,17329,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=5" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AddNewPublicationYes" NAME="action221"
+  PATH="/AddNewPublicationYes" SHAPE="368,1393,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action221"
+   PATH="catalog.mithcopyright.addpublicationyes.page" TARGET="page70"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#AddNewPublicationNo" NAME="action222"
+  PATH="/AddNewPublicationNo" SHAPE="32,17329,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action222"
+   PATH="catalog.mithcopyright.addpublicationno.page" TARGET="page72"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page70"
+  PATH="catalog.mithcopyright.addpublicationyes.page"
+  SHAPE="640,1378,0,0" SUBTYPE="tile"
+  TITLE="catalog.mithcopyright.addpublicationyes.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page72"
+  PATH="catalog.mithcopyright.addpublicationno.page"
+  SHAPE="240,17346,0,0" SUBTYPE="tile"
+  TITLE="catalog.mithcopyright.addpublicationno.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#AddNewClaimants" NAME="action223"
+  PATH="/AddNewClaimants" SHAPE="32,17329,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action223"
+   PATH="catalog.mithcopyright.addclaimants.page" TARGET="page71"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page71"
+  PATH="catalog.mithcopyright.addclaimants.page" SHAPE="240,17346,0,0"
+  SUBTYPE="tile" TITLE="catalog.mithcopyright.addclaimants.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#SelectLink5" NAME="action224" PATH="/SelectLink5"
+  SHAPE="448,17329,0,0" TITLE="NewClaimantsForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=6" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#DoneAddNewClaimants" NAME="action225"
+  PATH="/DoneAddNewClaimants" SHAPE="32,17329,0,0"
+  TITLE="NewClaimantsForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=5" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectLink6" NAME="action226" PATH="/SelectLink6"
+  SHAPE="32,17329,0,0" TITLE="LimitationClaimForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=7" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectLink7" NAME="action227" PATH="/SelectLink7"
+  SHAPE="96,513,0,0" TITLE="RightsPermissionForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=8" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectLink8" NAME="action228" PATH="/SelectLink8"
+  SHAPE="96,513,0,0" TITLE="CorrespondentForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=9" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectLink9" NAME="action229" PATH="/SelectLink9"
+  SHAPE="96,513,0,0" TITLE="MailCertificateForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=10" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectLink10" NAME="action230" PATH="/SelectLink10"
+  SHAPE="96,513,0,0" TITLE="SpecialhandlingForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=11" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#SelectLink11" NAME="action231" PATH="/SelectLink11"
+  SHAPE="96,513,0,0" TITLE="CertificationForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=12" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#OlegSendEmail" NAME="action232"
+  PATH="/OlegSendEmail" SHAPE="32,17329,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=12" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#DoneDeleteNewTitles" NAME="action233"
+  PATH="/DoneDeleteNewTitles" SHAPE="96,513,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=2" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#DoneDeleteNewAuthors" NAME="action234"
+  PATH="/DoneDeleteNewAuthors" SHAPE="96,513,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=4" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#DoneDeleteNewClaimants" NAME="action235"
+  PATH="/DoneDeleteNewClaimants" SHAPE="96,513,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/CopyRightRegistration.do?linkno=5" TARGET="action212"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#OlegLoginPage" NAME="action236"
+  PATH="/OlegLoginPage" SHAPE="32,17329,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action236"
+   PATH="catalog.mithcopyright.login.page" TARGET="page73"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page73" PATH="catalog.mithcopyright.login.page"
+  SHAPE="240,17346,0,0" SUBTYPE="tile"
+  TITLE="catalog.mithcopyright.login.page" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#OlegCustomerCopyrightTable" NAME="action237"
+  PATH="/OlegCustomerCopyrightTable" SHAPE="240,17345,0,0"
+  TITLE="LoginForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/WEB-INF/jsp/CatalogCopyRightRegistrationSummTablePage.jsp"
+   TARGET="page74" TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward1"
+   PATH="/WEB-INF/jsp/CatalogCopyRightRegistrationErrorLoginPage.jsp"
+   TARGET="page76" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="loginagain" NAME="forward2"
+   PATH="/OlegLoginPage.do" TARGET="action236" TITLE="loginagain"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page74"
+  PATH="/WEB-INF/jsp/CatalogCopyRightRegistrationSummTablePage.jsp"
+  SHAPE="32,17330,0,0" SUBTYPE="jsp"
+  TITLE="CatalogCopyRightRegistrationSummTablePage.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#OlegSummaryInDetail" NAME="action239"
+  PATH="/OlegSummaryInDetail" SHAPE="32,17329,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action239"
+   PATH="/WEB-INF/jsp/CatalogCopyRightRegistrationSummDetailPage.jsp"
+   TARGET="page75" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page75"
+  PATH="/WEB-INF/jsp/CatalogCopyRightRegistrationSummDetailPage.jsp"
+  SHAPE="448,17441,0,0" SUBTYPE="jsp"
+  TITLE="CatalogCopyRightRegistrationSummDetailPage.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page76"
+  PATH="/WEB-INF/jsp/CatalogCopyRightRegistrationErrorLoginPage.jsp"
+  SHAPE="656,17345,0,0" SUBTYPE="jsp"
+  TITLE="CatalogCopyRightRegistrationErrorLoginPage.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#OlegCopyrightPayNow" NAME="action238"
+  PATH="/OlegCopyrightPayNow" SHAPE="912,3233,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/ShowCartItems.do" TARGET="action188" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#OlegSendMailFromAdmin" NAME="action240"
+  PATH="/OlegSendMailFromAdmin" SHAPE="480,17361,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/OlegCustomerCopyrightTable.do" TARGET="action237"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward1"
+   PATH="/WEB-INF/jsp/CatalogCopyRightRegistrationErrorLoginPage.jsp"
+   TARGET="page76" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page77" PATH="catalog.mithcopyright.newpage"
+  SHAPE="256,320,0,0" SUBTYPE="tile"
+  TITLE="catalog.mithcopyright.newpage" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#LoginOlegChat" NAME="action241"
+  PATH="/LoginOlegChat" SHAPE="32,17361,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action241"
+   PATH="catalog.mithcopyright.chatpage" TARGET="page78" TITLE="forward"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page78" PATH="catalog.mithcopyright.chatpage"
+  SHAPE="240,17378,0,0" SUBTYPE="tile"
+  TITLE="catalog.mithcopyright.chatpage" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#OlegDoChatting" NAME="action242"
+  PATH="/OlegDoChatting" SHAPE="32,17361,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#LoginOlegPaidChat" NAME="action243"
+  PATH="/LoginOlegPaidChat" SHAPE="32,17361,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action243"
+   PATH="catalog.mithcopyright.paidchatpage" TARGET="page79"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page79" PATH="catalog.mithcopyright.paidchatpage"
+  SHAPE="240,17378,0,0" SUBTYPE="tile"
+  TITLE="catalog.mithcopyright.paidchatpage" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#OlegDoPaidChatting" NAME="action244"
+  PATH="/OlegDoPaidChatting" SHAPE="448,17361,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#LoginAdminOlegPaidChat" NAME="action245"
+  PATH="/LoginAdminOlegPaidChat" SHAPE="32,17361,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action245"
+   PATH="catalog.mithcopyright.paidchatadminlistpage" TARGET="page80"
+   TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page80"
+  PATH="catalog.mithcopyright.paidchatadminlistpage"
+  SHAPE="240,17378,0,0" SUBTYPE="tile"
+  TITLE="catalog.mithcopyright.paidchatadminlistpage" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#CatalogStaffPage" NAME="action246"
+  PATH="/CatalogStaffPage" SHAPE="32,17361,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action246" PATH="catalog.staff.page"
+   TARGET="page81" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page81" PATH="catalog.staff.page"
+  SHAPE="240,17378,0,0" SUBTYPE="tile" TITLE="catalog.staff.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#CatalogPartnersPage" NAME="action247"
+  PATH="/CatalogPartnersPage" SHAPE="32,17361,0,0" SUBTYPE="forward"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="action247" PATH="catalog.partners.page"
+   TARGET="page82" TITLE="forward" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page82" PATH="catalog.partners.page"
+  SHAPE="240,17378,0,0" SUBTYPE="tile" TITLE="catalog.partners.page"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+</PROCESS>

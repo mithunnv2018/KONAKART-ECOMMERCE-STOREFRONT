@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+                                   "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<!--
+     KonaKart Tiles definition file.
+	(c) 2006 DS Data Systems UK Ltd, All rights reserved.
+-->
+<tiles-definitions>
+ <!-- Main Layout -->
+ <definition name="main.layout" path="/WEB-INF/jsp/MainLayout.jsp">
+  <put name="header" value="/WEB-INF/jsp/Header.jsp"/>
+  <put name="body" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/CategoriesTile1.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/QuickSearchTile.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/RandomNewProdTile.jsp"/>
+  <put name="leftTile6" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile1" value="/WEB-INF/jsp/CartTile.jsp"/>
+  <put name="rightTile2" value="/WEB-INF/jsp/WishListTile.jsp"/>
+  <put name="rightTile3" value="/WEB-INF/jsp/OrderHistoryTile.jsp"/>
+  <put name="rightTile4" value="/WEB-INF/jsp/BestSellersTile.jsp"/>
+  <put name="rightTile5" value="/WEB-INF/jsp/RandomSpecialTile.jsp"/>
+  <put name="rightTile6" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile8" value="/WEB-INF/jsp/CurrenciesTile.jsp"/>
+  <put name="footer" value="/WEB-INF/jsp/Footer.jsp"/>
+ </definition>
+ <!-- Catalog Main Page -->
+ <definition extends="main.layout" name="catalog.main.page">
+  <put name="body" value="/WEB-INF/jsp/HomePageBody.jsp"/>
+  <put name="body1" value="/WEB-INF/jsp/RecentlyViewedProductsWithDetailBody.jsp"/>
+  <put name="body2" value="/WEB-INF/jsp/NewProductsWithDetailBody.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <!-- Page shown when user wants to modify address book entries -->
+ <definition extends="main.layout" name="catalog.addressbook.page">
+  <put name="body" value="/WEB-INF/jsp/AddressBookBody.jsp"/>
+ </definition>
+ <!-- Page shown when the cart tile is clicked to show all items -->
+ <definition extends="main.layout" name="catalog.showcartitems.page">
+  <put name="body" value="/WEB-INF/jsp/EditCartBody.jsp"/>
+ </definition>
+ <!-- Page shown when the wishlist tile is clicked to show all items -->
+ <definition extends="main.layout" name="catalog.showwishlistitems.page">
+  <put name="body" value="/WEB-INF/jsp/EditWishListBody.jsp"/>
+ </definition>
+ <!-- Page shown when adding an item to the gift registry -->
+ <definition extends="main.layout" name="catalog.showgiftregistries.page">
+  <put name="body" value="/WEB-INF/jsp/ShowGiftRegistriesBody.jsp"/>
+ </definition>
+ <!-- Page showing gift registry items that can be edited -->
+ <definition extends="main.layout" name="catalog.showgiftregistryitems.page">
+  <put name="body" value="/WEB-INF/jsp/EditGiftRegistryItemsBody.jsp"/>
+ </definition>
+ <!-- Page showing gift registry items that can be bought -->
+ <definition extends="main.layout" name="catalog.showgiftregistryitems.noedit.page">
+  <put name="body" value="/WEB-INF/jsp/ShowGiftRegistryItemsBody.jsp"/>
+ </definition>
+ <!-- Page showing reward point transactions -->
+ <definition extends="main.layout" name="catalog.showrewardpoints.page">
+  <put name="body" value="/WEB-INF/jsp/ShowRewardPointsBody.jsp"/>
+ </definition>
+ <!-- Page shown when a category is selected -->
+ <definition extends="main.layout" name="catalog.showcats.page">
+  <put name="body" value="/WEB-INF/jsp/CategoriesBody.jsp"/>
+  <put name="body1" value="/WEB-INF/jsp/NewProductsBody.jsp"/>
+ </definition>
+ <!-- Page shown for a list of products -->
+ <definition extends="main.layout" name="catalog.showprods.page">
+  <put name="body" value="/WEB-INF/jsp/ProductsBody.jsp"/>
+ </definition>
+ <!-- Page shown for a list of all orders for a customer -->
+ <definition extends="main.layout" name="catalog.showallorders.page">
+  <put name="body" value="/WEB-INF/jsp/ShowAllOrdersBody.jsp"/>
+ </definition>
+ <!-- Page shown for order details -->
+ <definition extends="main.layout" name="catalog.showorder.details.page">
+  <put name="body" value="/WEB-INF/jsp/ShowOrderDetailsBody.jsp"/>
+ </definition>
+ <!-- Page shown for a list of reviews -->
+ <definition extends="main.layout" name="catalog.showreviews.page">
+  <put name="body" value="/WEB-INF/jsp/ShowReviewsBody.jsp"/>
+ </definition>
+ <!-- Page shown for a list of all reviews with no product information -->
+ <definition extends="main.layout" name="catalog.showallreviews.page">
+  <put name="body" value="/WEB-INF/jsp/ShowAllReviewsBody.jsp"/>
+ </definition>
+ <!-- Page shown for a full review -->
+ <definition extends="main.layout" name="catalog.showreview.details.page">
+  <put name="body" value="/WEB-INF/jsp/ShowReviewDetailsBody.jsp"/>
+ </definition>
+ <!-- Page shown to write a review-->
+ <definition extends="main.layout" name="catalog.writereview.page">
+  <put name="body" value="/WEB-INF/jsp/WriteReviewBody.jsp"/>
+ </definition>
+ <!-- Page shown to enter advanced search constraints -->
+ <definition extends="main.layout" name="catalog.advancedsearch.page">
+  <put name="body" value="/WEB-INF/jsp/AdvancedSearchBody.jsp"/>
+ </definition>
+ <!-- Page shown to enter gift registry search constraints -->
+ <definition extends="main.layout" name="catalog.gift.registry.search.page">
+  <put name="body" value="/WEB-INF/jsp/GiftRegistrySearchBody.jsp"/>
+ </definition>
+ <!-- Page shown to LogIn -->
+ <definition extends="main.layout" name="catalog.login.page">
+  <put name="body" value="/WEB-INF/jsp/LogInBody.jsp"/>
+ </definition>
+ <!-- Page shown after logging out -->
+ <definition extends="main.layout" name="catalog.logout.page">
+  <put name="body" value="/WEB-INF/jsp/LogOutBody.jsp"/>
+ </definition>
+ <!-- Page shown after LogIng in -->
+ <definition extends="main.layout" name="catalog.afterlogin.page">
+  <put name="body" value="/WEB-INF/jsp/AfterLoginBody.jsp"/>
+ </definition>
+ <!-- Page shown if forgot password -->
+ <definition extends="main.layout" name="catalog.forgotpassword.page">
+  <put name="body" value="/WEB-INF/jsp/ForgotPasswordBody.jsp"/>
+ </definition>
+ <!-- Page shown to register a customer -->
+ <definition extends="main.layout" name="catalog.registercustomer.page">
+  <put name="body" value="/WEB-INF/jsp/RegisterCustomerBody.jsp"/>
+ </definition>
+ <!-- Page shown to edit a customer -->
+ <definition extends="main.layout" name="catalog.editcustomer.page">
+  <put name="body" value="/WEB-INF/jsp/EditCustomerBody.jsp"/>
+ </definition>
+ <!-- Page shown to create a gift registry -->
+ <definition extends="main.layout" name="catalog.create.gift.registry.page">
+  <put name="body" value="/WEB-INF/jsp/CreateGiftRegistryBody.jsp"/>
+ </definition>
+ <!-- Page shown to edit a gift registry -->
+ <definition extends="main.layout" name="catalog.edit.gift.registry.page">
+  <put name="body" value="/WEB-INF/jsp/EditGiftRegistryBody.jsp"/>
+ </definition>
+ <!-- Page shown to edit an address -->
+ <definition extends="main.layout" name="catalog.editaddr.page">
+  <put name="body" value="/WEB-INF/jsp/EditAddrBody.jsp"/>
+ </definition>
+ <!-- Page shown to change an address during checkout -->
+ <definition extends="main.layout" name="catalog.changedeliveryaddr.page">
+  <put name="body" value="/WEB-INF/jsp/ChangeDeliveryAddrBody.jsp"/>
+ </definition>
+ <!-- Page shown to change a shipping address for a gift registry -->
+ <definition extends="main.layout" name="catalog.change.gift.registry.addr.page">
+  <put name="body" value="/WEB-INF/jsp/ChangeGiftRegistryAddrBody.jsp"/>
+ </definition>
+ <!-- Page shown to change an address during checkout -->
+ <definition extends="main.layout" name="catalog.changepaymentaddr.page">
+  <put name="body" value="/WEB-INF/jsp/ChangePaymentAddrBody.jsp"/>
+ </definition>
+ <!-- Page shown to delete an address -->
+ <definition extends="main.layout" name="catalog.deleteaddr.page">
+  <put name="body" value="/WEB-INF/jsp/DeleteAddrBody.jsp"/>
+ </definition>
+ <!-- Page shown to create a new address -->
+ <definition extends="main.layout" name="catalog.newaddr.page">
+  <put name="body" value="/WEB-INF/jsp/NewAddrBody.jsp"/>
+ </definition>
+ <!-- Page shown to change the password of a customer -->
+ <definition extends="main.layout" name="catalog.changepassword.page">
+  <put name="body" value="/WEB-INF/jsp/ChangePasswordBody.jsp"/>
+ </definition>
+ <!-- Page shown to manage the preferences of a customer -->
+ <definition extends="main.layout" name="catalog.manage.preferences.page">
+  <put name="body" value="/WEB-INF/jsp/ManagePreferencesBody.jsp"/>
+ </definition>
+ <!-- Page shown to show after a customer has registered -->
+ <definition extends="main.layout" name="catalog.accountcreated.page">
+  <put name="body" value="/WEB-INF/jsp/AccountCreatedBody.jsp"/>
+ </definition>
+ <!-- Page shown to edit the newsletter -->
+ <definition extends="main.layout" name="catalog.editnewsletter.page">
+  <put name="body" value="/WEB-INF/jsp/EditNewsletterBody.jsp"/>
+ </definition>
+ <!-- Page shown to edit the notified products -->
+ <definition extends="main.layout" name="catalog.EditNotifiedProducts.page">
+  <put name="body" value="/WEB-INF/jsp/EditNotifiedProductsBody.jsp"/>
+ </definition>
+ <!-- Checkout pages -->
+ <definition extends="main.layout" name="catalog.checkoutcreditcard.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCheckoutCreditCardBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.external.payment.frame.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCheckoutExternalPaymentFrameBody.jsp"/>
+ </definition>
+ <definition name="catalog.external.payment.from.frame.page" path="/WEB-INF/jsp/PaymentFrameLayout.jsp">
+  <put name="body" value="/WEB-INF/jsp/CatalogCheckoutExternalPaymentBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.checkoutdelivery.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCheckoutDeliveryBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.checkoutpayment.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCheckoutPaymentBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.checkoutconfirmation.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCheckoutConfirmationBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.checkoutfinished.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCheckoutFinishedBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.external.payment.error.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCheckoutExternalPaymentError.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.onepagecheckout.page">
+  <put name="body" value="/WEB-INF/jsp/OnePageCheckoutBody.jsp"/>
+ </definition>
+ <!-- Information pages -->
+ <definition extends="main.layout" name="catalog.shippingandreturns.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogShippingAndReturnsBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.privacynotice.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogPrivacyNoticeBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.conditionsofuse.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogConditionsOfUseBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.contactus.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogContactUsBody.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.aboutus.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogAboutUsBody.jsp"/>
+ </definition>
+ <!-- Mithun added this below definition for SiteMap -->
+ <definition extends="main.layout" name="catalog.sitemap.page">
+  <put name="body" value="/WEB-INF/jsp/SiteMapBody.jsp"/>
+ </definition>
+ <!-- Mithun ends here sitemap 
+ Page shown for the detail of one product -->
+ <definition extends="main.layout" name="catalog.showprod.details.page">
+  <put name="header" value="/WEB-INF/jsp/Header.jsp"/>
+  <put name="body" value="/WEB-INF/jsp/ProductDetailsBody.jsp"/>
+  <put name="body1" value="/WEB-INF/jsp/AlsoPurchasedBody.jsp"/>
+  <put name="body2" value="/WEB-INF/jsp/UpSellBody.jsp"/>
+  <put name="body3" value="/WEB-INF/jsp/CrossSellBody.jsp"/>
+  <put name="body4" value="/WEB-INF/jsp/AccessoryBody.jsp"/>
+  <put name="body5" value="/WEB-INF/jsp/DependentProductBody.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/CategoriesTile1.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/RandomNewProdTile.jsp"/>
+  <put name="leftTile3" value="/WEB-INF/jsp/QuickSearchTile.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile6" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile1" value="/WEB-INF/jsp/CartTile.jsp"/>
+  <put name="rightTile2" value="/WEB-INF/jsp/ManufacturerTile.jsp"/>
+  <put name="rightTile3" value="/WEB-INF/jsp/OrderHistoryTile.jsp"/>
+  <put name="rightTile4" value="/WEB-INF/jsp/BestSellersTile.jsp"/>
+  <put name="rightTile5" value="/WEB-INF/jsp/NotificationsTile.jsp"/>
+  <put name="rightTile6" value="/WEB-INF/jsp/WriteReviewTile.jsp"/>
+  <put name="rightTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile8" value="/WEB-INF/jsp/CurrenciesTile.jsp"/>
+  <put name="footer" value="/WEB-INF/jsp/Footer.jsp"/>
+ </definition>
+ <!-- Page shown to show an image-->
+ <definition extends="main.layout" name="catalog.showimage.page">
+  <put name="header" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body" value="/WEB-INF/jsp/ShowImageBody.jsp"/>
+  <put name="body1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile6" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile6" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile8" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <!-- Page shown to go to the home page of a manufacturer-->
+ <definition extends="main.layout" name="catalog.showhomepage.page">
+  <put name="header" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body" value="/WEB-INF/jsp/ManufacturerHomePage.jsp"/>
+  <put name="body1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile6" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile6" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile8" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="footer" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <!-- Page show the information on merging carts-->
+ <definition extends="main.layout" name="catalog.showmergeinfo.page">
+  <put name="header" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body" value="/WEB-INF/jsp/MergeInfoPage.jsp"/>
+  <put name="body1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="body5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile6" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile3" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile6" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile7" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="rightTile8" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="footer" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <!-- Exception Page -->
+ <definition extends="main.layout" name="exception.summary.page">
+  <put name="body" value="/WEB-INF/jsp/ExceptionSummary.jsp"/>
+ </definition>
+ <!-- Unavailable Page -->
+ <definition extends="main.layout" name="unavailable.page">
+  <put name="body" value="/WEB-INF/jsp/Unavailable.jsp"/>
+ </definition>
+ <definition name="catalog.external.payment.page" path="/WEB-INF/jsp/CatalogCheckoutExternalPaymentBody.jsp"/>
+ <definition name="catalog.punchout.page" path="/WEB-INF/jsp/CatalogCheckoutPunchout.jsp"/>
+ <!-- Commidea Payment Gateway Pages -->
+ <definition extends="main.layout" name="catalog.commideacreditcard.page">
+  <put name="body" value="/WEB-INF/jsp/CommideaCreditCardBody.jsp"/>
+ </definition>
+ <definition name="catalog.commidea3dsecurecheck.page" path="/WEB-INF/jsp/Commidea3DSecureBody.jsp"/>
+ <!-- Catalog Main Page -->
+ <definition extends="main.layout" name="catalog.mithcopyright.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCopyRightRegistrationBody.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/CopyRightLinksTile1.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <definition name="catalog.mithcopyright.link1" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink1Body.jsp"/>
+ <definition name="catalog.mithcopyright.link2" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink2Body.jsp"/>
+ <definition name="catalog.mithcopyright.link3" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink3Body.jsp"/>
+ <definition name="catalog.mithcopyright.link4" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink4Body.jsp"/>
+ <definition name="catalog.mithcopyright.link5" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink5Body.jsp"/>
+ <definition name="catalog.mithcopyright.link6" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink6Body.jsp"/>
+ <definition name="catalog.mithcopyright.link7" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink7Body.jsp"/>
+ <definition name="catalog.mithcopyright.link8" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink8Body.jsp"/>
+ <definition name="catalog.mithcopyright.link9" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink9Body.jsp"/>
+ <definition name="catalog.mithcopyright.link10" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink10Body.jsp"/>
+ <definition name="catalog.mithcopyright.link11" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLink11Body.jsp"/>
+ <definition extends="main.layout" name="catalog.mithcopyright.addtitles.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCopyRightRegistrationAddNewTitlesBody.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/CopyRightLinksTile1.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.mithcopyright.addauthors.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCopyRightRegistrationAddNewAuthorsBody.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/CopyRightLinksTile1.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.mithcopyright.addpublicationyes.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCopyRightRegistrationAddNewPublicationYesBody.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/CopyRightLinksTile1.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.mithcopyright.addpublicationno.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCopyRightRegistrationAddNewPublicationNoBody.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/CopyRightLinksTile1.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.mithcopyright.addclaimants.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogCopyRightRegistrationAddNewClaimantsBody.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/CopyRightLinksTile1.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <definition name="catalog.mithcopyright.login.page" path="/WEB-INF/jsp/CatalogCopyRightRegistrationLoginPage.jsp"/>
+ <definition extends="main.layout" name="catalog.mithcopyright.newpage">
+  <put name="body" value="/WEB-INF/jsp/CatalogCopyRightRegistrationNewBody.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.mithcopyright.chatpage">
+  <put name="body" value="/WEB-INF/jsp/CatalogDoChat.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+ <definition extends="main.layout" name="catalog.mithcopyright.paidchatpage">
+  <put name="body" value="/WEB-INF/jsp/CatalogDoPaidChat.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+<definition extends="main.layout" name="catalog.mithcopyright.paidchatadminlistpage">
+  <put name="body" value="/WEB-INF/jsp/CatalogShowAdminChat.jsp"/>
+  <put name="leftTile2" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile1" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile4" value="/WEB-INF/jsp/Empty.jsp"/>
+  <put name="leftTile5" value="/WEB-INF/jsp/Empty.jsp"/>
+ </definition>
+<definition extends="main.layout" name="catalog.staff.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogStaffBody.jsp"/>
+ </definition>  
+<definition extends="main.layout" name="catalog.partners.page">
+  <put name="body" value="/WEB-INF/jsp/CatalogPartnersBody.jsp"/>
+ </definition>  
+</tiles-definitions>

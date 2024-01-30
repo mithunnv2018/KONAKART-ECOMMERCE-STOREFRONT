@@ -1,0 +1,173 @@
+//
+// (c) 2006 DS Data Systems UK Ltd, All rights reserved.
+//
+// DS Data Systems and KonaKart and their respective logos, are 
+// trademarks of DS Data Systems UK Ltd. All rights reserved.
+//
+// The information in this document is free software; you can redistribute 
+// it and/or modify it under the terms of the GNU Lesser General Public
+// License as published by the Free Software Foundation; either
+// version 2.1 of the License, or (at your option) any later version.
+// 
+// This software is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// Lesser General Public License for more details.
+//
+
+package com.konakart.actions;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+
+import com.konakart.al.KKAppEng;
+import com.konakart.appif.AddressIf;
+import com.konakart.appif.WishListIf;
+
+/**
+ * Gets called before the edit gift registry page.
+ */
+public class EditGiftRegistryAction extends BaseAction
+{
+
+    /**
+     * 
+     * @param mapping
+     *            The ActionMapping used to select this instance
+     * @param form
+     *            The optional ActionForm bean for this request (if any)
+     * @param request
+     *            The HTTP request we are processing
+     * @param response
+     *            The HTTP response we are creating
+     * 
+     */
+    public ActionForward execute(ActionMapping mapping, ActionForm form,
+            HttpServletRequest request, HttpServletResponse response)
+    {
+
+        try
+        {
+            int custId;
+
+            KKAppEng kkAppEng = this.getKKAppEng(request, response);
+
+            custId = this.loggedIn(request, response, kkAppEng, null);
+
+            // Check to see whether the user is logged in
+            if (custId < 0)
+            {
+                return mapping.findForward(loginForward);
+            }
+
+            // Ensure we are using the correct protocol. Redirect if not.
+            ActionForward redirForward = checkSSL(kkAppEng, request, custId, /* forceSSL */false);
+            if (redirForward != null)
+            {
+                return redirForward;
+            }
+
+            String wishListId = request.getParameter("wishListId");
+            WishListIf currentWishList = null;
+            if (wishListId == null)
+            {
+                /*
+                 * If the wishListId parameter doesn't exist, we can use the current wish list if it
+                 * exists. This could be used in the case of the back button
+                 */
+                if (kkAppEng.getWishListMgr().getCurrentWishList() != null)
+                {
+                    currentWishList = kkAppEng.getWishListMgr().getCurrentWishList();
+                } else
+                {
+                    return mapping.findForward("MyAccount");
+                }
+            } else
+            {
+                // Test to see whether the wish list is an integer
+                int wishListIdInt;
+                try
+                {
+                    wishListIdInt = new Integer(wishListId).intValue();
+                } catch (Exception e)
+                {
+                    return mapping.findForward("MyAccount");
+                }
+
+                // Set the current wish list
+                if (kkAppEng.getCustomerMgr().getCurrentCustomer() != null
+                        && kkAppEng.getCustomerMgr().getCurrentCustomer().getWishLists() != null)
+                {
+                    for (int i = 0; i < kkAppEng.getCustomerMgr().getCurrentCustomer()
+                            .getWishLists().length; i++)
+                    {
+                        WishListIf wl = kkAppEng.getCustomerMgr().getCurrentCustomer()
+                                .getWishLists()[i];
+                        if (wl != null && wl.getId() == wishListIdInt)
+                        {
+                            currentWishList = wl;
+                            kkAppEng.getWishListMgr().setCurrentWishList(wl);
+                            break;
+                        }
+                    }
+                }
+
+                // If we can't find the wish list then we can't edit it
+                if (currentWishList == null)
+                {
+                    return mapping.findForward("MyAccount");
+                }
+            }
+
+            // Ensure that the current customer has his addresses populated
+            kkAppEng.getCustomerMgr().populateCurrentCustomerAddresses(/* force */false);
+
+            // Populate the address attribute of the current wish list
+            if (kkAppEng.getCustomerMgr().getCurrentCustomer().getAddresses() != null)
+            {
+                for (int i = 0; i < kkAppEng.getCustomerMgr().getCurrentCustomer().getAddresses().length; i++)
+                {
+                    AddressIf addr = kkAppEng.getCustomerMgr().getCurrentCustomer().getAddresses()[i];
+                    if (addr.getId() == currentWishList.getAddressId())
+                    {
+                        currentWishList.setAddress(addr);
+                    }
+                }
+            }
+
+            /*
+             * If an address doesn't exist for the address id, set the id to a valid address and
+             * save the wish list
+             */
+            if (currentWishList.getAddress() == null
+                    && kkAppEng.getCustomerMgr().getCurrentCustomer().getAddresses() != null
+                    && kkAppEng.getCustomerMgr().getCurrentCustomer().getAddresses().length > 0)
+            {
+                currentWishList.setAddress(kkAppEng.getCustomerMgr().getCurrentCustomer()
+                        .getAddresses()[0]);
+                currentWishList.setAddressId(kkAppEng.getCustomerMgr().getCurrentCustomer()
+                        .getAddresses()[0].getId());
+
+                // Edit the wish list
+                kkAppEng.getWishListMgr().editWishList(currentWishList);
+
+                // Refresh the customer's wish list
+                kkAppEng.getWishListMgr().fetchCustomersWishLists();
+
+            }
+
+            kkAppEng.nav.add(getCatMessage(request, "header.customer.editweddinglist"), request);
+            return mapping.findForward("EditGiftRegistryPage");
+
+        } catch (Exception e)
+        {
+            return mapping.findForward(super.handleException(request, e));
+        }
+
+    }
+
+}

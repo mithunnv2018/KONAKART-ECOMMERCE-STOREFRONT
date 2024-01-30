@@ -1,0 +1,290 @@
+/*
+# (c) 2006 DS Data Systems UK Ltd, All rights reserved.
+#
+# DS Data Systems and KonaKart and their respective logos, are 
+# trademarks of DS Data Systems UK Ltd. All rights reserved.
+#
+# The information in this document below this text is free software; you can redistribute 
+# it and/or modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+# 
+# This software is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+*/
+
+/* Import the tile style */
+@import 'tile3.css';
+
+body {
+  background: #ffffff;
+  color: #000000;
+  margin: 0px;
+}
+
+.body-header { 
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #9a9a9a;
+}
+
+.body-header img {
+ float: right;
+}
+
+.body-header  .small  {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: #000000;
+  padding-left:20px;
+}
+
+.body-header  .taggroup  {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  color: #000000;
+  font-weight: bold;
+  padding-left:0px;
+}
+
+.body-header  .tag  {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  color: #000000;
+  font-weight: normal;
+  padding-left:0px;
+}
+
+.body-content-div { 
+  padding-top: 20px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.body-content-tab { 
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+table.productListing {
+  border: 1px;
+  border-style: solid;
+  border-color: #b6b7cb;
+  border-spacing: 1px;
+}
+
+.productListing-heading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #b6b7cb;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+td.productListing-data {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+tr.accountHistory-odd, tr.addressBook-odd, tr.alsoPurchased-odd, tr.payment-odd, tr.productListing-odd, tr.productReviews-odd, tr.upcomingProducts-odd, tr.shippingOptions-odd {
+  background: #f8f8f9;
+}
+
+tr.accountHistory-even, tr.addressBook-even, tr.alsoPurchased-even, tr.payment-even, tr.productListing-even, tr.productReviews-even, tr.upcomingProducts-even, tr.shippingOptions-even {
+  background: #f8f8f9;
+}
+
+td.smallText, span.smallText,p.smallText {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+}
+
+a.pageResults {
+  color: #0000FF;
+}
+
+a.pageResults:hover {
+  color: #0000FF;
+  background: #FFFF33;
+}
+
+.stockWarning { 
+ font-family : Verdana, Arial, sans-serif; 
+ font-size : 10px; 
+ color: #cc0033; 
+}
+
+.msg-box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 8px;
+  padding-right: 16px;
+  background: #f8f8f9; 
+  border: 1px;
+  border-style: solid;
+  border-color: #bbc3d3;
+  height:100%;
+}
+
+.msg-box-no-pad {
+  background: #f8f8f9; 
+  border: 1px;
+  border-style: solid;
+  border-color: #bbc3d3;
+  height:100%;
+}
+
+.boxText { 
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 10px; 
+}
+
+.productsNotifications { 
+	background: #f2fff7; 
+}
+
+.orderEdit { 
+	font-family : Verdana, Arial, sans-serif; 
+	font-size : 10px; 
+	color: #70d250; 
+	text-decoration: underline; 
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #AABBDD;
+  text-decoration: underline;
+}
+
+form {
+	display: inline;
+}
+
+
+td.fieldKey {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+td.fieldValue {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
+
+checkbox, input, radio, select {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+textarea {
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+span.markProductOutOfStock {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #c76170;
+  font-weight: bold;
+}
+
+span.productSpecialPrice {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+}
+
+.moduleRow { }
+.moduleRowOver { 
+	background-color: #D7E9F7; 
+	cursor: pointer; 
+	cursor: hand; 
+}
+
+.checkoutBarFrom, .checkoutBarTo { 
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 10px; 
+	color: #8c8c8c;
+}
+
+.checkoutBarCurrent { 
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 10px; 
+	color: #000000; 
+}
+
+.messageStackError, .messageStackWarning { 
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 10px; 
+	background-color: #ffb3b5; 
+}
+
+.messageStackSuccess { 
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 10px; 
+	background-color: #99ff00; 
+}
+
+.inputRequirement { 
+	font-family: Verdana, Arial, sans-serif; 
+	font-size: 10px; 
+	color: #ff0000; 
+}
+
+.list-detail-header { 
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0;
+}
+
+/*
+KonaKart GWT styles
+*/
+
+.konakart-HandCursor {
+  cursor: pointer;
+}
+
+.konakart-PointerCursor {
+ cursor: default;
+}
+
+.konakart-TextBox {
+	background-color: white;
+}
+
+.konakart-TextBox-Invalid {
+	background-color: #ffb3b5;
+}
+
+.konakart-smallFont {
+  font-size: 60%;
+}
+
+.gwt-DialogBox {
+	border: 2px solid #AAAAAA;
+	background-color: white;
+}
+
+.gwt-DialogBox .Caption {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+	color: #9a9a9a;	padding: 4px;
+	padding-bottom: 8px;
+	cursor: default;
+}
+

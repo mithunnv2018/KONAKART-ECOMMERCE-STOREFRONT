@@ -1,0 +1,280 @@
+/*
+# (c) 2007 DS Data Systems UK Ltd, All rights reserved.
+#
+# DS Data Systems and KonaKart and their respective logos, are 
+# trademarks of DS Data Systems UK Ltd. All rights reserved.
+#
+# The information in this document below this text is free software; you can redistribute 
+# it and/or modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+# 
+# This software is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+*/
+
+/*
+This style is similar to the original osCommerce style except that all tiles can take different colors.
+*/
+
+
+/* 
+    Header 
+*/
+
+.header1 { 
+}
+
+.header2 {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 13px;
+  color: #ffffff;
+}
+
+.header2 a {
+  color: #ffffff;
+}
+
+.header-tile {
+ background: #ccccaa;
+ color: #ccccaa;
+}
+
+/* 
+    Footer 
+*/
+
+.footer1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 13px;
+}
+
+.footer2 {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.footer2 td {
+  color: #ffffff;
+}
+
+.footer2 a {
+  color: #ffffff;
+}
+
+.footer-tile {
+ background: #ccccaa;
+ color: #ccccaa;
+}
+
+/* 
+   Tile 
+*/
+
+.button-tile {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 16px;
+  background: #ffffff; 
+  border: 1px;
+  border-style: solid;
+  border-color: #bbc3d3;
+  margin-top:15px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color:#000000;
+}
+
+.tile {
+ background: #bbc3d3;
+ color: #bbc3d3;
+}
+
+.tile-header {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+}
+
+.tile-header img {
+ float: right;
+}
+
+.tile-content {
+  background: #f8f8f9;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  border: 1px;
+  border-style: solid;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.tile-content p {
+   color: #000000;
+   margin: 0;
+}
+
+.tile-content table {
+  border: 0px;
+}
+
+.cart-tile .tile-content table {
+ border: 0px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+
+.notifications-tile .tile-content  {
+ min-height: 100%;
+}
+
+/*
+    Tile colors
+*/
+
+.information-tile {
+ background: #7f994c;
+ color: #7f994c;
+}
+
+.quick-search-tile {
+ background: #994c66;
+ color: #994c66;
+}
+
+.random-new-prod-tile {
+ background: #d89000;
+ color: #d89000;
+}
+
+.search-by-manufacturer-tile {
+ background: #00aaff;
+ color: #00aaff;
+}
+
+.categories-tile-1 {
+ background: #b200b2;
+ color: #b200b2;
+}
+
+.cart-tile {
+ background: #99c3cc;
+ color: #99c3cc;
+}
+
+.random-special-tile {
+ background: #994c66;
+ color: #994c66;
+}
+
+.random-review-tile {
+ background: #b4d800;
+ color: #b4d800;
+}
+
+.languages-tile {
+ background: #dd55ff;
+ color: #dd55ff;
+}
+
+.notifications-tile {
+ background: #808080;
+ color: #808080;
+}
+
+.manufacturer-tile {
+ background: #5d8c00;
+ color: #5d8c00;
+}
+
+.write-review-tile {
+ background: #b20076;
+ color: #b20076;
+}
+
+.best-sellers-tile {
+ background: #ccb299;
+ color: #ccb299;
+}
+
+.order-history-tile {
+ background: #bbcc99;
+ color: #bbcc99;
+}
+
+.wishlist-tile {
+ background: #cc99c3;
+ color: #99c3cc;
+}
+
+.select-currency-tile {
+ background: #99cccc;
+ color: #99cccc;
+}
+
+.new-products-body {
+ background: #7292b2;
+ color: #7292b2;
+}
+
+.also-purchased-body {
+ background: #008c5d;
+ color: #008c5d;
+}
+
+.cross-sell-body {
+ background: #2400d8;
+ color: #2400d8;
+}
+
+.up-sell-body {
+ background: #b27272;
+ color: #b27272;
+}
+
+.accessory-body {
+ background: #8c8c00;
+ color: #8c8c00;
+}
+
+.dependent-product-body {
+ background: #b1b1b1;
+ color: #b1b1b1;
+}
+
+/* Dynamic CSSMenu */
+
+#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
+	{
+	color: #ffffffff;;
+	background-color: #ccccaa;
+	text-decoration:none;
+	}
+	
+#menuh a:hover	/* menu at mouse-over  */
+	{
+	color: white;
+	background-color: #999977;
+	text-decoration:none;
+	}	
+

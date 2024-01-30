@@ -1,0 +1,146 @@
+/*
+# (c) 2007 DS Data Systems UK Ltd, All rights reserved.
+#
+# DS Data Systems and KonaKart and their respective logos, are 
+# trademarks of DS Data Systems UK Ltd. All rights reserved.
+#
+# The information in this document below this text is free software; you can redistribute 
+# it and/or modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+# 
+# This software is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+#
+*/
+/*
+This style is similar to the original osCommerce style. All tiles have the same style. A background image can be added for the header.
+*/
+
+/* Header */
+.header1 {
+ 
+}
+
+.header2 {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 13px;
+  color: #ffffff;
+}
+
+.header2 a {
+  color: #ffffff;
+}
+
+
+/* Footer */
+.footer1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 13px;
+}
+
+.footer2 {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.footer2 td {
+  color: #ffffff;
+}
+
+.footer2 a {
+  color: #ffffff;
+}
+
+/* Tile */
+.button-tile {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 16px;
+  background: #ffffff; 
+  border: 1px;
+  border-style: solid;
+  border-color: #bbc3d3;
+  margin-top:15px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color:#000000;
+}
+
+.tile {
+ /* background: #bbc3d3; */
+ background-image: url(../images/styles/tile_header_back.png); 
+ color: #bbc3d3;
+}
+
+.tile-header {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+}
+
+.tile-header img {
+ float: right;
+}
+
+
+.tile-content {
+  background: #f8f8f9;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  border: 1px;
+  border-style: solid;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.tile-content p {
+   color: #000000;
+   margin: 0;
+}
+
+.tile-content table {
+  border: 0px;
+}
+
+.cart-tile .tile-content table {
+ border: 0px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+
+/* Dynamic CSSMenu */
+
+#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
+	{
+	color: #ffffffff;
+	background-image: url(../images/styles/tile_header_back.png); 
+	text-decoration:none;
+	}
+	
+#menuh a:hover	/* menu at mouse-over  */
+	{
+	color: white;
+	background-image: url(../images/styles/1_hover.jpg); 
+	text-decoration:none;
+	}	
+
+

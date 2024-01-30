@@ -1,0 +1,40 @@
+Duly Noted Certificate
+<html>
+	<head>
+		<title>Welcome</title>
+		<style type="text/css">							
+			.font {font-family: Arial, Helvetica, Sans-Serif;}
+			.title{font-size: 160%;}		
+			.dataCell { font-family: Arial, Helvetica, Sans-Serif; background-color: #E1E7F7 }
+			.title1{font-size: 120%;}		
+			.option{font-size: 80%;}		
+		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<table border="0" width="100%" class="font">
+			<tr>
+				<td class="title">
+					<a  href="http://www.dulynoted.co.uk:8780/konakart">
+						<img src="http://www.dulynoted.co.uk:8780/konakart/images/logo.png" border="0" alt=""/>
+					</a>
+				</td>
+ 
+			</tr>
+		</table>
+		<table border="0" width="100%" class="dataCell">
+			<tr>
+				<td width="100%"  colspan="2">
+					Dear $customer.getFirstName() $customer.getLastName() .<br/> <br/> Please find the attachment for your Certificate. For futher assitance you can reply back to this email id.
+				</td>
+			</tr>
+ 
+  
+		</table>
+<br/>
+<br/>
+Thank you, <br/>
+Duly Noted Ltd
+	</body> 
+</html> 
+

@@ -1,0 +1,169 @@
+/*
+. (c) 2007 DS Data Systems UK Ltd, All rights reserved.
+.
+. DS Data Systems and KonaKart and their respective logos, are 
+. trademarks of DS Data Systems UK Ltd. All rights reserved.
+.
+. The information in this document below this text is free software; you can redistribute 
+. it and/or modify it under the terms of the GNU Lesser General Public
+. License as published by the Free Software Foundation; either
+. version 2.1 of the License, or (at your option) any later version.
+. 
+. This software is distributed in the hope that it will be useful,
+. but WITHOUT ANY WARRANTY; without even the implied warranty of
+. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+. Lesser General Public License for more details.
+.
+*/
+/*
+This style uses images to produce a shadow effect
+*/
+
+/* Header */
+.header1 {
+ 
+}
+
+.header2 {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 13px;
+  color: #000000;
+}
+
+/* Footer */
+.footer1 {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 13px;
+}
+
+.footer2 {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.footer2 td {
+  color: #9ba3b3;
+}
+
+/* Tile */
+
+.button-tile {
+  padding-top: 6px;
+  padding-bottom: 13px;
+  padding-left: 10px;
+  padding-right: 15px;
+  margin-top:10px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  color:#000000;
+}
+
+.tile {
+ background: #f0f0f0;
+ color: #9ba3b3;
+}
+
+.tile-header {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 10px;
+}
+
+.tile-header img {
+ float: right;
+}
+
+.tile-content {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  padding-top: 6px;
+  padding-bottom: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
+.tile-content p {
+   color: #000000;
+   margin: 0;
+   padding-right: 8px;
+}
+
+.cart-tile .tile-content table {
+ border: 0px;
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+
+.top-right, .bottom-left, .bottom-right
+	{
+	background-color: transparent;
+	background-repeat: no-repeat;
+	}
+
+.top-right
+	{
+	background-image:url(../images/styles/shadow_tr.png);
+	background-position: 100% 0%;
+	}
+	
+.bottom-left
+	{
+	background-image:url(../images/styles/shadow_bl.png);
+	background-position: 0% 100%;
+	}
+
+.bottom-right
+	{
+	background-image:url(../images/styles/shadow_br.png);
+	background-position: 100% 100%;
+	}
+
+.bottom
+	{
+	background-color: transparent;
+	background-repeat: repeat-x;
+	}
+			
+.bottom
+	{
+	background-image:url(../images/styles/shadow_b.png);
+	background-position: 50% 100%;
+	}
+	
+.right
+	{
+	background-image:url(../images/styles/shadow_r.png);
+	background-position: 100% 0%;
+	background-repeat: repeat-y;
+	}
+
+/* Dynamic CSSMenu */
+
+#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
+	{
+	color: black;
+	background-color: #eeeeee;
+	text-decoration:none;
+	}
+	
+#menuh a:hover	/* menu at mouse-over  */
+	{
+	color: white;
+	background-color: #aaaaaa;
+	text-decoration:none;
+	}	
+
